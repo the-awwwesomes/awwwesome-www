@@ -1,0 +1,183 @@
+@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, Calibri, sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #333;
+    text-align: center;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+main {
+    padding: 0 30px;
+    padding: 0 3rem;
+}
+
+#info {
+   opacity: 0;
+}
+
+.fadein {
+    animation: fadeIn 1s ease-in-out;
+    opacity: 1 !important;
+}
+
+.title {
+    font-family: 'Cutive Mono', Courier, monospace;
+    font-size: 3rem;
+    line-height: 1; 
+}
+
+.typing {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    border-right: 2px solid black;
+    width: 260px;
+    width: 26rem;
+    -webkit-animation: type 2.4s steps(14, end), blink-caret 1s step-end infinite;
+    -moz-animation: type 2.4s steps(14, end), blink-caret 1s step-end infinite;
+    -o-animation: type 2.4s steps(14, end), blink-caret 1s step-end infinite;;
+    animation: type 2.4s steps(14, end), blink-caret 1s step-end infinite;
+}
+
+.newsletter {
+    margin: 20px 0;
+    margin: 2rem 0;
+}
+
+.newsletter__email,
+.newsletter__submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    padding: 1rem;
+    border: 2px solid #333;
+}
+
+.newsletter__email {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-width: 0;
+}
+
+.newsletter__submit {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    transition: color .3s ease-in, background-color .3s ease-in;
+}
+
+.newsletter__submit:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+@-webkit-keyframes type {
+  from { width: 0; } 
+  to { width: 26rem; }
+}
+
+@-moz-keyframes type {
+  from { width: 0; } 
+  to { width: 26rem; }
+}
+
+@-o-keyframes type {
+  from { width: 0; } 
+  to { width: 26rem; }
+}
+
+@keyframes type { 
+  from { width: 0; } 
+  to { width: 26rem; }
+}
+
+@-webkit-keyframes blink-caret {
+  from, to { border-color: transparent }
+    50% { border-color: #333 }
+}
+
+@-moz-keyframes blink-caret {
+  from, to { border-color: transparent }
+    50% { border-color: #333 }
+}
+
+@-o-keyframes blink-caret {
+  from, to { border-color: transparent }
+    50% { border-color: #333 }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #333 }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
