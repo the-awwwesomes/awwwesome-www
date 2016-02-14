@@ -3,7 +3,7 @@ var gulp = require('gulp');
 var clean = require('gulp-clean');
 var cssmin = require('gulp-cssmin');
 var inject = require('gulp-inject');
-var revAll = require('gulp-rev-all');
+var rev = require('gulp-rev');
 var uglify = require('gulp-uglify');
 var connect = require('gulp-connect');
 var concat = require('gulp-concat');
@@ -15,7 +15,7 @@ var bowerFiles = require('main-bower-files');
 /*
   Development settings
 */
-gulp.task('serve:dev', ['inject:dev', 'connect:dev', 'watch:dev']);
+gulp.task('serve:dev', ['inject:dev', 'connect', 'watch:dev']);
 
 gulp.task('inject:dev', function () {
   var target = gulp.src('index.html');
@@ -29,7 +29,7 @@ gulp.task('inject:dev', function () {
     .pipe(gulp.dest('.'));
 });
 
-gulp.task('connect:dev', function () {
+gulp.task('connect', function () {
   connect.server({
     livereload: true
   });
@@ -60,26 +60,34 @@ gulp.task('js', function () {
   Production settings
 */
 gulp.task('css:dist', function () {
-  console.log(revAll)
   gulp.src([
     './dev/css/normalize.css',
     './dev/css/main.css' 
     ])
     .pipe(concat('bundle.css'))
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions']
-    }))
     .pipe(cssmin())
+    .pipe(rev())
     .pipe(rename({suffix: '.min'}))
-    .pipe(revAll.revision())
     .pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task('js:dist', function () {
+  gulp.src([
+    './dev/js/plugins.js',
+    './dev/js/main.js' 
+    ])
+    .pipe(concat('bundle.js'))
+    .pipe(uglify())
+    .pipe(rev())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('./dist/js'));
 });
 
 gulp.task('inject:dist', function () {
   var target = gulp.src('index.html');
   var sources = gulp.src([
-    './dev/js/**/*.js', 
-    './dev/css/**/*.css'
+    './dist/js/**/*.js', 
+    './dist/css/**/*.css'
   ], { read: false });
 
   return target.pipe(inject(sources))
@@ -87,11 +95,17 @@ gulp.task('inject:dist', function () {
     .pipe(gulp.dest('.'));
 });
 
+gulp.task('clean:css', function () {
+  return gulp.src('./dist/css', {read: false})
+    .pipe(clean());
+});
+
+gulp.task('clean:js', function () {
+  return gulp.src('./dist/js', {read: false})
+    .pipe(clean());
+});
+
+gulp.task('bundle', ['clean:css', 'clean:js', 'css:dist', 'js:dist', 'inject:dist']);
+
 // For testing production code locally
-gulp.task('serve:dist', function() {
-
-});
-
-gulp.task('bundle', function() {
-
-});
+gulp.task('serve:dist', ['bundle', 'connect']);
