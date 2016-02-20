@@ -13,7 +13,7 @@
 }
 
 html {
-  font-size: 80%;
+  font-size: 70%;
 }
 
 @media (min-width: 768px) {
@@ -103,8 +103,14 @@ header ul {
 }
 
 header ul li {
-  display: inline-block;
-  margin: 0 2rem;
+  margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  header ul li {
+    display: inline-block;
+    margin: 0 2rem;
+  }
 }
 
 header a {
@@ -124,7 +130,7 @@ header a {
 }
 
 .hero {
-  height: 540px;
+  min-height: 540px;
   text-align: center;
   text-transform: uppercase;
   background: url('../../img/hero.svg') no-repeat #f28e9c;
