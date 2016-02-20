@@ -1,0 +1,89 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after {
+    content: ' ';
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+html {
+  font-size: 70%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  font: 500 2rem/1.5 'brandon-grotesque', sans-serif;
+  color: #151d46;
+}
+
+a {
+  color: #f06969;
+  text-decoration: none;
+  transition: color .3s ease-in;
+}
+
+a:hover {
+  color: #151d46;
+}
+
+p {
+  font-family: 'Cardo', serif;
+}
+
+dt {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+dd {
+  font-family: 'Cardo', serif;
+  margin: 1rem 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading-decorated {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  margin-left: -3.6rem;
+  margin-right: -3.6rem;
+  position: relative;
+}
+
+.heading-decorated::after {
+  content: ' ';
+  display: inline-block;
+  border-top: 0.8rem solid #f28e9c;
+  width: 100%;
+  position: absolute;
+  top: 1.4rem;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.subheading-decorated {
+  font-family: 'Cardo', serif;
+  font-size: 1.8rem;
+  color: #50535f;
+  text-align: center;
+}

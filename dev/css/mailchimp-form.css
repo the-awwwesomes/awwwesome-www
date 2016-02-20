@@ -1,0 +1,31 @@
+/*
+  Mailchimp form styles
+*/
+.mailchimp-form {
+  margin-bottom: 2rem
+}
+
+.mailchimp-mail,
+.mailchimp-btn {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}
+
+.mailchimp-mail {
+  margin-bottom: 1rem;
+  border: 2px solid #151d46;
+  color: #151d46;
+}
+
+.mailchimp-btn {
+  border: 2px solid #151d46;
+  background: #151d46;
+  color: white;
+  transition: background .3s ease-in, color .3s ease-in;
+}
+
+.mailchimp-btn:hover {
+  background: #1D2A69;
+}
