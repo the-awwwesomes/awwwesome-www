@@ -21,7 +21,8 @@ gulp.task('inject:dev', function () {
   var target = gulp.src('index.html');
   var sources = gulp.src([
     './dev/js/**/*.js', 
-    './dev/css/**/*.css'
+    './dev/css/normalize.css',
+    './dev/css/main.css'
   ], { read: false });
 
   return target.pipe(inject(sources))
