@@ -79,12 +79,8 @@
   transform: rotate3d(0, 0, 1, -45deg); 
 }
 
-.hidden-mobile {
-  display: block !important;
-}
-
-@media screen and (max-width: 767px) {
-  .hidden-mobile {
+@media (max-width: 768px) {
+  .js-menu {
     display: none;
   }
 }

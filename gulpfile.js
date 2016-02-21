@@ -18,10 +18,7 @@ var bowerFiles = require('main-bower-files');
 gulp.task('serve:dev', ['inject:dev', 'connect', 'watch:dev']);
 
 gulp.task('inject:dev', function () {
-  var target = gulp.src([
-    'index.html',
-    './code-of-conduct/index.html'
-  ]);
+  var target = gulp.src('index.html');
   var sources = gulp.src([
     './dev/js/**/*.js', 
     './dev/css/normalize.css',
@@ -81,6 +78,15 @@ gulp.task('css:dist', function () {
     .pipe(gulp.dest('./dist/css'));
 });
 
+gulp.task('css:vendor:dist', function () {
+  gulp.src('./bower_components/**/*.css')
+    .pipe(concat('vendor.css'))
+    .pipe(cssmin())
+    .pipe(rev())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('./dist/css'));
+});
+
 gulp.task('js:dist', function () {
   gulp.src([
     './dev/js/plugins.js',
@@ -93,18 +99,23 @@ gulp.task('js:dist', function () {
     .pipe(gulp.dest('./dist/js'));
 });
 
+gulp.task('js:vendor:dist', function () {
+  gulp.src('./bower_components/**/*.js')
+    .pipe(concat('vendor.js'))
+    .pipe(cssmin())
+    .pipe(rev())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('./dist/js'));
+});
+
 gulp.task('inject:dist', function () {
-  var target = gulp.src([
-    'index.html',
-    './code-of-conduct/index.html'
-  ]);
+  var target = gulp.src('index.html');
   var sources = gulp.src([
     './dist/js/**/*.js', 
     './dist/css/**/*.css'
   ], { read: false });
 
   return target.pipe(inject(sources))
-    .pipe(inject(gulp.src(bowerFiles(), {read: false}), {name: 'bower'}))
     .pipe(gulp.dest('.'));
 });
 
@@ -118,7 +129,10 @@ gulp.task('clean:js', function () {
     .pipe(clean());
 });
 
-gulp.task('bundle', ['clean:css', 'clean:js', 'css:dist', 'js:dist', 'inject:dist']);
+gulp.task('bundle', ['clean:css', 'clean:js', 
+  'css:dist', 'css:vendor:dist', 
+  'js:dist', 'js:vendor:dist', 
+  'inject:dist']);
 
 // For testing production code locally
 gulp.task('serve:dist', ['bundle', 'connect']);
