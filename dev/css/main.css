@@ -233,8 +233,17 @@ header a:hover {
   font-size: 1.8rem;
 }
 
-.mentor__social--twitter {
-  height: 50px;
+.mentor__contact {
+  text-align: right;
+}
+
+.mentor__contact a {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.mentor__contact img {
+  height: 3.5rem;
 }
 
 .partners {
@@ -273,4 +282,16 @@ footer address a:hover {
 
 footer small {
   text-transform: uppercase;
+}
+
+.footer__social svg {
+  margin: 0 2.5rem;
+}
+
+.footer__social a path {
+  transition: .3s fill ease-in;
+}
+
+.footer__social a:hover path {
+  fill: #f28e9c;
 }
