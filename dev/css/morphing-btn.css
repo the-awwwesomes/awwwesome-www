@@ -59,22 +59,32 @@
   top: -1.3rem; 
 }
 
-.lines-button:hover .lines {
+.lines-button.js-close .lines {
   transition: background .2s 0s ease;
   background: transparent;
 }
 
-.lines-button:hover .lines:before, 
-.lines-button:hover .lines:after {
+.lines-button.js-close .lines:before, 
+.lines-button.js-close .lines:after {
   transition: top .3s ease, transform .2s .3s ease;   
   top: 0;
   width: 4rem;
 }
 
-.lines-button:hover .lines:before {
+.lines-button.js-close .lines:before {
   transform: rotate3d(0, 0, 1, 45deg); 
 }
 
-.lines-button:hover .lines:after {
+.lines-button.js-close .lines:after {
   transform: rotate3d(0, 0, 1, -45deg); 
+}
+
+.hidden-mobile {
+  display: block !important;
+}
+
+@media screen and (max-width: 767px) {
+  .hidden-mobile {
+    display: none;
+  }
 }

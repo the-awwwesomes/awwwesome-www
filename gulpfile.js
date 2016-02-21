@@ -18,7 +18,10 @@ var bowerFiles = require('main-bower-files');
 gulp.task('serve:dev', ['inject:dev', 'connect', 'watch:dev']);
 
 gulp.task('inject:dev', function () {
-  var target = gulp.src('index.html');
+  var target = gulp.src([
+    'index.html',
+    './code-of-conduct/index.html'
+  ]);
   var sources = gulp.src([
     './dev/js/**/*.js', 
     './dev/css/normalize.css',
@@ -91,7 +94,10 @@ gulp.task('js:dist', function () {
 });
 
 gulp.task('inject:dist', function () {
-  var target = gulp.src('index.html');
+  var target = gulp.src([
+    'index.html',
+    './code-of-conduct/index.html'
+  ]);
   var sources = gulp.src([
     './dist/js/**/*.js', 
     './dist/css/**/*.css'

@@ -2,8 +2,11 @@ header,
 footer {
   background-color: #151d46;
   color: white;
-  text-align: right;
   padding: 2.5rem;
+}
+
+header {
+  text-align: right;
 }
 
 header ul {
@@ -24,7 +27,8 @@ header ul li {
   }
 }
 
-header a {
+header a,
+header a:hover {
   color: white;
   font-size: 2rem;
 }
@@ -42,31 +46,64 @@ header a {
 
 .hero {
   min-height: 540px;
+  padding: 0 3rem 3rem 3rem;
   text-align: center;
   text-transform: uppercase;
   background: url('../../img/hero.svg') no-repeat #f28e9c;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.hero--code-of-conduct {
+  min-height: 345px;
+}
+
 .hero__logo {
-  
+  font-weight: 800;
+  line-height: 1;
+  font-size: 10vw;
+  margin-top: 0;
+}
+
+.hero__logo a {
+  color: #151d46;
+}
+
+.hero__the {
+  font-size: 5vw;
+}
+
+@media (min-width: 768px) {
+  .hero__logo {
+    font-size: 9rem;
+  }
+
+  .hero__the {
+    font-size: 2.5rem;
+  }
 }
 
 .hero__subheader {
+  font-size: 2rem;
+  margin: 0;
 }
 
 .hero__main-info {
   background-color: #f06463;
   color: white;
   padding: 2.2rem;
+  font-size: 2.4rem;
   opacity: 0.8;
 }
 
 .hero__c2a-btn {
   color: white;
+  font-size: 2.4rem;
+  padding: 1.8rem;
+  width: 455px;
   background: #151d46;
   border-color: #151d46;
 }
@@ -77,18 +114,21 @@ header a {
 
 .offer-item {
   margin: 2rem 0; 
+  background-size: 35%;
+  background-position: top right;
+  background-repeat: no-repeat;
 }
 
 .offer-item:nth-child(1) {
-
+  background-image: url('../../img/lang.svg');
 }
 
 .offer-item:nth-child(2) {
-  
+  background-image: url('../../img/user.svg');
 }
 
 .offer-item:nth-child(3) {
-  
+  background-image: url('../../img/clock.svg');
 }
 
 .offer-item__num,
@@ -118,19 +158,12 @@ header a {
   color: #f28e9c;
 }
 
-.offer-container {
-  position: relative;
-}
-
 .offer__important {
   background-color: #f27e83;
   color: white;
   text-transform: uppercase;
-  padding: 0.7rem 1.3rem;
-  margin: 0;
-  /*transform: rotate(-90deg);*/
+  padding: 0.3rem 1.3rem;
   text-align: right;
-  position: absolute;
 }
 
 .apply {
@@ -200,6 +233,10 @@ header a {
   font-size: 1.8rem;
 }
 
+.mentor__social--twitter {
+  height: 50px;
+}
+
 .partners {
   list-style-type: none;
   padding: 0;
@@ -214,6 +251,11 @@ header a {
 .partners a {
   display: inline-block;
   vertical-align: middle;
+}
+
+.code-of-conduct {
+  margin-bottom: 15rem;
+  margin-top: 6rem;
 }
 
 footer address {

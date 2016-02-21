@@ -23,8 +23,13 @@ html {
 }
 
 body {
-  font: 500 2rem/1.5 'brandon-grotesque', sans-serif;
+  font-weight: 500;
+  font-size: 20px; /* set fallback base font for IE8 */
+  font-size: 2rem;
+  font-family: 'brandon-grotesque', sans-serif;
+  line-height: 1.5;
   color: #151d46;
+  overflow-x: hidden; 
 }
 
 a {

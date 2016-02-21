@@ -7,6 +7,10 @@
         <meta name="description" content="Społeczność programistów front-end. Darmowe warsztaty z programowania HTML & CSS.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <meta property="og:title" content="The Awwwesomes - Darmowe warsztaty z programowania HTML & CSS">
+        <meta property="og:image" content="http://theawwwesomes.org/og/main.png">
+        <meta property="og:description" content="Społeczność programistów front-end. Darmowe warsztaty z programowania HTML & CSS.">
+
         <link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Rozha+One' rel='stylesheet' type='text/css'>
 
@@ -21,20 +25,25 @@
         <link rel="stylesheet" href="/dev/css/mailchimp-form.css">
         <!-- endinject -->
 
+        <!--[if lt IE 9]>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <![endif]-->
+
         <script src="https://use.typekit.net/axy0wet.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
     </head>
     <body>
         <header>
-          <button class="lines-button arrow arrow-left" type="button" role="button" aria-label="Toggle Navigation">
+          <button class="lines-button js-toggle-nav" type="button" role="button" aria-label="Toggle Navigation">
             <span class="lines"></span>
           </button>
           <nav>
-            <ul>
+            <ul class="js-menu">
               <li><a href="#offer">O warsztatach</a></li>
               <li><a href="#faq">FAQ</a></li>
               <li><a href="#venue">Miejsce</a></li>
               <li><a href="#partners">Partnerzy</a></li>
+              <li><a href="/code-of-conduct/">Code of Conduct</a></li>
               <li><a href="https://theawwwesomes.typeform.com/to/qSRAxH" target="_blank" class="header__apply-btn">Aplikuj</a></li>
             </ul>
           </nav>
@@ -42,7 +51,7 @@
 
         <section class="hero">
           <h1 class="hero__logo">
-            The <br> Awwwesomes
+            <span class="hero__the">The</span> <br> Awwwesomes
           </h1>
           <h2 class="hero__subheader">
             Warsztaty z programowania HTML & CSS dla początkujących
@@ -88,7 +97,7 @@
               <p>To tylko niektóre z powodów, dla których warto zaaplikować na warsztaty The Awwwesomes.</p>
             </div>
 
-            <div class="offer-container col-sm-6">
+            <div class="col-sm-6">
               <h3 class="offer__important">Ważne!</h3>
               <p>Będziemy uczyć języków <strong>HTML</strong> i <strong>CSS</strong> zupełnie od podstaw oraz, co ważne, zupełnie za darmo!</p>
 
@@ -181,6 +190,30 @@
               <img src="/img/marta.jpg" alt="Marta Sztybor" class="mentor__photo">
               <h3 class="mentor__name">Marta</h3>
               <p>Słusznie Woźny powiadał, że on w skroń białą wznosząca nad niego ze skoszonej łąki. Wszystko bieży ku studni, której już byli z wolna krocz stado.</p>
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 28.1 28.1" style="enable-background:new 0 0 28.1 28.1;" xml:space="preserve" class="mentor__social mentor__social--twitter">
+                <path fill="#151d46" d="M22.6,8.8c-0.6,0.3-1.3,0.5-2,0.6c0.7-0.4,1.3-1.1,1.5-1.9c-0.7,0.4-1.4,0.7-2.2,0.8c-0.6-0.7-1.5-1.1-2.6-1.1
+                  c-1.9,0-3.5,1.6-3.5,3.5c0,0.3,0,0.5,0.1,0.8C11,11.3,8.4,9.9,6.7,7.8C6.4,8.3,6.2,8.9,6.2,9.5c0,1.2,0.6,2.3,1.6,2.9
+                  c-0.6,0-1.1-0.2-1.6-0.4v0c0,1.7,1.2,3.1,2.8,3.4c-0.3,0.1-0.6,0.1-0.9,0.1c-0.2,0-0.4,0-0.7-0.1c0.4,1.4,1.7,2.4,3.3,2.4
+                  c-1.2,0.9-2.7,1.5-4.3,1.5c-0.3,0-0.6,0-0.8,0c1.5,1,3.4,1.6,5.4,1.6c6.4,0,9.9-5.3,9.9-9.9c0-0.2,0-0.3,0-0.5
+                  C21.5,10.1,22.1,9.5,22.6,8.8"/>
+              </svg>
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="50px" height="50px" viewBox="-13 -13 50 50" enable-background="new -13 -13 50 50" xml:space="preserve" 
+                   class="mentor__social mentor__social--url">
+                <g fill="#151d46">
+                  <path d="M22.146,1.778c-0.821-0.82-2.049-0.82-2.87,0L2.06,18.995c-0.82,0.82-0.82,2.049,0,2.869c0.82,0.819,2.049,0.819,2.869,0
+                    L22.146,4.647C22.965,3.828,22.965,2.598,22.146,1.778z"/>
+                  <path d="M4.929,33.342l7.174-7.174c2.87-2.869,3.689-7.173,2.253-10.862l-3.484,3.485c0,1.638-0.409,3.277-1.844,4.713
+                    l-7.174,7.174c-2.46,2.461-6.354,2.461-8.608,0c-2.459-2.46-2.459-6.354,0-8.609l7.174-7.174c1.229-1.229,3.074-1.846,4.714-1.846
+                    l3.483-3.483C4.929,8.132,0.625,8.747-2.245,11.821l-7.173,7.174c-3.894,3.894-3.894,10.45,0,14.347
+                    C-5.524,37.44,1.035,37.44,4.929,33.342z"/>
+                  <path d="M14.973,0.343l7.174-7.173c2.458-2.459,6.353-2.459,8.606,0c2.256,2.459,2.461,6.354,0,8.608l-7.174,7.174
+                    c-1.229,1.229-3.073,1.844-4.713,1.844l-3.485,3.485c3.691,1.435,7.995,0.613,10.864-2.255l7.174-7.174
+                    c3.893-3.895,3.893-10.454,0-14.347c-3.895-3.895-10.454-3.895-14.347,0l-6.969,6.968C9.233,0.343,8.414,4.647,9.848,8.336
+                    l3.484-3.483C13.127,3.212,13.742,1.573,14.973,0.343z"/>
+                </g>
+              </svg>
             </div>
           </div> 
         </section>
@@ -189,7 +222,7 @@
           <h1 class="heading-decorated">Miejsce</h1>
           <h2 class="subheading-decorated">Gdzie będziemy się spotykać</h2>
 
-          <p>Już niedługo pojawi się tu więcej informacji! <br> Zapisz się na newsletter aby być na bieżąco:</p>
+          <p>Już niedługo ogłosimy miejsce, w którym będziemy się spotykać! <br> Zapisz się na newsletter aby być na bieżąco:</p>
 
           <!-- Begin MailChimp Signup Form -->
           <div id="mc_embed_signup">
@@ -222,7 +255,7 @@
           
         </section>
 
-        <footer>
+        <footer class="text-center">
           <address>Możesz się z nami skontaktować pod adresem <a href="mailto:contact@theawwwesomes.org">contact@theawwwesomes.org</a></address>
           <small>The Awwwesomes 2016</small>
         </footer>
