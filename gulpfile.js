@@ -21,7 +21,11 @@ gulp.task('inject:dev', function () {
   var target = gulp.src('index.html');
   var sources = gulp.src([
     './dev/js/**/*.js', 
-    './dev/css/**/*.css'
+    './dev/css/normalize.css',
+    './dev/css/base.css',
+    './dev/css/main.css',
+    './dev/css/morphing-btn.css',
+    './dev/css/mailchimp-form.css'
   ], { read: false });
 
   return target.pipe(inject(sources))
@@ -62,9 +66,21 @@ gulp.task('js', function () {
 gulp.task('css:dist', function () {
   gulp.src([
     './dev/css/normalize.css',
-    './dev/css/main.css' 
+    './dev/css/base.css',
+    './dev/css/main.css',
+    './dev/css/morphing-btn.css',
+    './dev/css/mailchimp-form.css'
     ])
     .pipe(concat('bundle.css'))
+    .pipe(cssmin())
+    .pipe(rev())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task('css:vendor:dist', function () {
+  gulp.src('./bower_components/**/*.css')
+    .pipe(concat('vendor.css'))
     .pipe(cssmin())
     .pipe(rev())
     .pipe(rename({suffix: '.min'}))
@@ -83,6 +99,15 @@ gulp.task('js:dist', function () {
     .pipe(gulp.dest('./dist/js'));
 });
 
+gulp.task('js:vendor:dist', function () {
+  gulp.src('./bower_components/**/*.js')
+    .pipe(concat('vendor.js'))
+    .pipe(cssmin())
+    .pipe(rev())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('./dist/js'));
+});
+
 gulp.task('inject:dist', function () {
   var target = gulp.src('index.html');
   var sources = gulp.src([
@@ -91,7 +116,6 @@ gulp.task('inject:dist', function () {
   ], { read: false });
 
   return target.pipe(inject(sources))
-    .pipe(inject(gulp.src(bowerFiles(), {read: false}), {name: 'bower'}))
     .pipe(gulp.dest('.'));
 });
 
@@ -105,7 +129,10 @@ gulp.task('clean:js', function () {
     .pipe(clean());
 });
 
-gulp.task('bundle', ['clean:css', 'clean:js', 'css:dist', 'js:dist', 'inject:dist']);
+gulp.task('bundle', ['clean:css', 'clean:js', 
+  'css:dist', 'css:vendor:dist', 
+  'js:dist', 'js:vendor:dist', 
+  'inject:dist']);
 
 // For testing production code locally
 gulp.task('serve:dist', ['bundle', 'connect']);

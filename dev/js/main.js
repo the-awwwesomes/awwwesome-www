@@ -1,5 +1,6 @@
 $(document).ready(function () {
-	setTimeout(function(){
-       $("#info").addClass("fadein");
-    }, 2400);
+	$('.js-toggle-nav').click(function () {
+    $('.js-menu').slideToggle();
+    $(this).toggleClass('js-close');
+  });
 });
