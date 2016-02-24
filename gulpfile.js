@@ -68,6 +68,7 @@ gulp.task('js', function () {
 gulp.task('css:dist', function () {
   gulp.src([
     './dev/css/normalize.css',
+    './dev/css/bootstrap.css',
     './dev/css/base.css',
     './dev/css/main.css',
     './dev/css/morphing-btn.css',

@@ -10,7 +10,6 @@
   "moduleType": [],
   "private": true,
   "dependencies": {
-    "jquery": "^2.2.0",
-    "Boostrap Grid": "bootstrap-grid-css#*"
+    "jquery": "^2.2.0"
   }
 }

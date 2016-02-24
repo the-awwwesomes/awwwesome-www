@@ -229,6 +229,7 @@ header a:hover {
     letter-spacing: 5px;
     text-transform: uppercase;
     display: inline-block;
+    transition: color .3s ease-in, border-color .3s ease-in;
 }
 
 .apply__c2a:hover {
