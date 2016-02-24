@@ -22,10 +22,12 @@ gulp.task('inject:dev', function () {
   var sources = gulp.src([
     './dev/js/**/*.js', 
     './dev/css/normalize.css',
+    './dev/css/bootstrap.css',
     './dev/css/base.css',
     './dev/css/main.css',
     './dev/css/morphing-btn.css',
     './dev/css/mailchimp-form.css'
+    
   ], { read: false });
 
   return target.pipe(inject(sources))
