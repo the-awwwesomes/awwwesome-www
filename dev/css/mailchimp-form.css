@@ -8,9 +8,10 @@
 .mailchimp-mail,
 .mailchimp-btn {
   display: block;
-  width: 80%;
+  width: 570px;
   margin: 0 auto;
-  padding: 0.5rem 1rem;
+  padding: .5rem 1rem;
+  min-width: 350px;
 }
 
 .mailchimp-mail {
@@ -22,8 +23,11 @@
 .mailchimp-btn {
   border: 2px solid #151d46;
   background: #151d46;
-  color: white;
-  transition: background .3s ease-in, color .3s ease-in;
+  color: #fff;
+  transition: background .3s ease-in,color .3s ease-in;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 570px;  
 }
 
 .mailchimp-btn:hover {
