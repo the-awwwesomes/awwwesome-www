@@ -21,7 +21,12 @@
     <!-- bower:css -->
     <!-- endinject -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="/dist/css/bundle-17e899c342.min.css">
+    <link rel="stylesheet" href="/dev/css/normalize.css">
+    <link rel="stylesheet" href="/dev/css/bootstrap.css">
+    <link rel="stylesheet" href="/dev/css/base.css">
+    <link rel="stylesheet" href="/dev/css/main.css">
+    <link rel="stylesheet" href="/dev/css/morphing-btn.css">
+    <link rel="stylesheet" href="/dev/css/mailchimp-form.css">
     <!-- endinject -->
     <!--[if lt IE 9]>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -49,7 +54,7 @@
             <span class="hero__the">The</span> <br> Awwwesomes
           </h1>
         <h2 class="hero__subheader">
-            Warsztaty z programowania HTML & CSS dla początkujących
+            Darmowe warsztaty z programowania HTML & CSS dla początkujących
           </h2>
         <h3 class="hero__main-info">
             Pierwsze zajęcia już 
@@ -64,33 +69,29 @@
         <h1 class="heading-decorated"><span>Co oferujemy?</span></h1>
         <h2 class="subheading-decorated">Same fajne rzeczy! Więcej szczegółów poniżej.</h2>
         <div class="row">
+          <div class="col-sm-6">
+            <h3 class="offer__important">Z serii ważne!</h3>
+            <p>Będziemy uczyć języków <strong>HTML</strong> i <strong>CSS</strong> zupełnie od podstaw oraz, co ważne, zupełnie za darmo! Zapisy trwają do <strong>5 kwietnia</strong> włącznie.</p>
+            <p>Cały kurs składa się z <strong>ośmiu dwugodzinnych lekcji</strong>. Zaczynamy już
+                <time datetime="2016-04-20"><strong>20 kwietnia</strong></time>, zajęcia będą odbywać się co tydzień, <strong>w każdą środę</strong> w godzinach <strong><time datetime="18:00+01:00">18.00</time> - <time datetime="20:00+01:00">20.00</time></strong>.</p>
+            <p>Daty kolejnych spotkań to:
+                <br/>
+                <time datetime="2016-04-20T18:00+01:00">20.04</time>,
+                <time datetime="2016-04-27T18:00+01:00">27.04</time>,
+                <time datetime="2016-05-04T18:00+01:00">04.05</time>,
+                <time datetime="2016-05-11T18:00+01:00">11.05</time>,
+                <time datetime="2016-05-18T18:00+01:00">18.05</time>,
+                <time datetime="2016-05-25T18:00+01:00">25.05</time>,
+                <time datetime="2016-06-01T18:00+01:00">01.06</time> oraz
+                <time datetime="2016-06-08T18:00+01:00">08.06</time>.
+            </p>
+          </div>
             <div class="col-sm-6">
-                <div class="container-padding-right">
-                    <h3 class="offer__important">Z serii ważne!</h3>
-                    <p>Będziemy uczyć języków <strong>HTML</strong> i <strong>CSS</strong> zupełnie od podstaw oraz, co ważne, zupełnie za darmo! Zapisy trwają do <strong>5 kwietnia</strong> włącznie.</p>
-                    <p>Cały kurs składa się z <strong>ośmiu dwugodzinnych lekcji</strong>. Zaczynamy już
-                        <time datetime="2016-04-20"><strong>20 kwietnia</strong></time>, zajęcia będą odbywać się co tydzień, <strong>w każdą środę</strong> w godzinach <strong><time datetime="18:00+01:00">18.00</time> - <time datetime="20:00+01:00">20.00</time></strong>.</p>
-                    <p>Daty kolejnych spotkań to:
-                        <br/>
-                        <time datetime="2016-04-20T18:00+01:00">20.04</time>,
-                        <time datetime="2016-04-27T18:00+01:00">27.04</time>,
-                        <time datetime="2016-05-04T18:00+01:00">04.05</time>,
-                        <time datetime="2016-05-11T18:00+01:00">11.05</time>,
-                        <time datetime="2016-05-18T18:00+01:00">18.05</time>,
-                        <time datetime="2016-05-25T18:00+01:00">25.05</time>,
-                        <time datetime="2016-06-01T18:00+01:00">01.06</time> oraz
-                        <time datetime="2016-06-08T18:00+01:00">08.06</time>.
-                    </p>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="container-padding-left">
-                    <h3 class="offer__important">A czy to dla mnie?</h3>
-                    <p>Czy kiedykolwiek zastanawiałeś się, jak zbudowane są strony WWW?</br>
-                        Planujesz karierę jako programistka/programista front-end i potrzebujesz merytorycznego wsparcia na start?</br>
-                        A może prowadzisz własnego bloga i chcesz wprowadzić poprawki w szablonie, ale nie wiesz, jak to zrobić?</p>
-                    <p>To tylko niektóre z powodów, dla których warto zaaplikować na warsztaty The Awwwesomes.</p>
-                </div>
+              <h3 class="offer__important">A czy to dla mnie?</h3>
+              <p>Czy kiedykolwiek zastanawiałeś się, jak zbudowane są strony WWW?</br>
+                  Planujesz karierę jako programistka/programista front-end i potrzebujesz merytorycznego wsparcia na start?</br>
+                  A może prowadzisz własnego bloga i chcesz wprowadzić poprawki w szablonie, ale nie wiesz, jak to zrobić?</p>
+              <p>To tylko niektóre z powodów, dla których warto zaaplikować na warsztaty The Awwwesomes.</p>
             </div>
         </div>
     </section>
@@ -113,49 +114,48 @@
         </div>
     </section>
     <section id="faq" class="container">
-        <h1 class="heading-decorated"><span>FAQ</span></h1>
-        <h2 class="subheading-decorated">Czyli odpowiadamy na Wasze pytania</h2>
-        <div class="row  col-md-6 faq__container container-padding-right">
-            <dl>
-                <dt>
-                    1. Dlaczego to robicie?
-                </dt>
-                <dd>
-                    Nasza praca jest naszą pasją i chcemy się nią podzielić. Zależy nam również na propagowaniu wiedzy o tym, jak tworzyć dostępne i estetyczne strony internetowe. A tak w ogóle programowanie front-end jest fajne, być może to coś dla Ciebie?
-                </dd>
-                <dt>
-                    2. Czy wymagana jest jakakolwiek wiedza na temat tego, jak zbudowane są strony internetowe?
-                </dt>
-                <dd>
-                    Nie, będziemy uczyć wszystkiego zupełnie od zera. Jeśli jednak kiedykolwiek miałeś styczność z programowaniem WWW nie jest to przeszkodą - być może uda Ci się poszerzyć i usystematyzować swoją wiedzę.
-                </dd>
-                <dt>
-                    3. Czy będzie mi potrzebny własny laptop?
-                </dt>
-                <dd>
-                    Tak, powinien on również umożliwiać połączenie się z WiFi. Ponadto zależy nam, abyś miał dostęp w domu do wszystkiego co stworzysz na kursie.
-                </dd>
-            </dl>
-        </div>
-        <div class="row  col-md-6 faq__container container-padding-left">
-            <dl>
-                <dt>
-                    4. Jakie oprogramowanie powinnam/powinienem mieć już zainstalowane?</dt>
-                <dd>
-                    Na początek wystarczy Ci przynajmniej jedna (ulubiona) przeglądarka internetowa oraz edytor tekstu (polecamy <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>!). Na późniejszych zajęciach, kiedy będziemy zaczynać pracę z layoutem, przyda się Adobe Photoshop (możesz do tego celu pobrać <a href="http://www.adobe.com/downloads.html" target="_blank">wersję trial</a>, jeśli go nie posiadasz). Jeśli z jakichś powodów nie chcesz pracować z Photoshopem możesz pobrać <a href="https://www.gimp.org/downloads/" target="_blank">GIMPa</a>, choć ma on swoją specyfikę i ograniczenia.
-                </dd>
-                <dt>
-                    5. W jaki sposób wyłonicie uczestników?
-                </dt>
-                <dd>
-                    Nie jest dla nas ważne ile masz lat, jakiej jesteś płci lub Twoje wykształcenie. Ważna jest Twoja motywacja! Liczba miejsc jest ograniczona, więc spośród wszystkich aplikacji wybierzemy te osoby, które według nas będą mogły wynieść z warsztatów jak najwięcej dla siebie.
-                </dd>
-            </dl>
-        </div>
-        <div class="row col-md-12">
-            <p class="faq__more">Masz więcej pytań?
-                <br> Napisz do nas na <a href="mailto:contact@theawwwesomes.org">contact@theawwwesomes.org</a></p>
-        </div>
+      <h1 class="heading-decorated"><span>FAQ</span></h1>
+      <h2 class="subheading-decorated">Czyli odpowiadamy na Wasze pytania</h2>
+      <div class="faq__container row">
+        <dl class="col-sm-6">
+          <dt>
+              1. Dlaczego to robicie?
+          </dt>
+          <dd>
+              Nasza praca jest naszą pasją i chcemy się nią podzielić. Zależy nam również na propagowaniu wiedzy o tym, jak tworzyć dostępne i estetyczne strony internetowe. A tak w ogóle programowanie front-end jest fajne, być może to coś dla Ciebie?
+          </dd>
+          <dt>
+              2. Czy wymagana jest jakakolwiek wiedza na temat tego, jak zbudowane są strony internetowe?
+          </dt>
+          <dd>
+              Nie, będziemy uczyć wszystkiego zupełnie od zera. Jeśli jednak kiedykolwiek miałeś styczność z programowaniem WWW nie jest to przeszkodą - być może uda Ci się poszerzyć i usystematyzować swoją wiedzę.
+          </dd>
+          <dt>
+              3. Czy będzie mi potrzebny własny laptop?
+          </dt>
+          <dd>
+              Tak, powinien on również umożliwiać połączenie się z WiFi. Ponadto zależy nam, abyś miał dostęp w domu do wszystkiego co stworzysz na kursie.
+          </dd>
+        </dl>
+
+        <dl class="col-sm-6">
+            <dt>
+                4. Jakie oprogramowanie powinnam/powinienem mieć już zainstalowane?</dt>
+            <dd>
+                Na początek wystarczy Ci przynajmniej jedna (ulubiona) przeglądarka internetowa oraz edytor tekstu (polecamy <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>!). Na późniejszych zajęciach, kiedy będziemy zaczynać pracę z layoutem, przyda się Adobe Photoshop (możesz do tego celu pobrać <a href="http://www.adobe.com/downloads.html" target="_blank">wersję trial</a>, jeśli go nie posiadasz). Jeśli z jakichś powodów nie chcesz pracować z Photoshopem możesz pobrać <a href="https://www.gimp.org/downloads/" target="_blank">GIMPa</a>, choć ma on swoją specyfikę i ograniczenia.
+            </dd>
+            <dt>
+                5. W jaki sposób wyłonicie uczestników?
+            </dt>
+            <dd>
+                Nie jest dla nas ważne ile masz lat, jakiej jesteś płci lub Twoje wykształcenie. Ważna jest Twoja motywacja! Liczba miejsc jest ograniczona, więc spośród wszystkich aplikacji wybierzemy te osoby, które według nas będą mogły wynieść z warsztatów jak najwięcej dla siebie.
+            </dd>
+        </dl>
+      </div>
+      <div class="row col-md-12">
+          <p class="faq__more">Masz więcej pytań?
+              <br> Napisz do nas na <a href="mailto:contact@theawwwesomes.org">contact@theawwwesomes.org</a></p>
+      </div>
     </section>
     <section class="apply">
         <p>Zgłoś się już teraz!</p>
@@ -170,28 +170,45 @@
         <h1 class="heading-decorated"><span>Kto za tym stoi?</span></h1>
         <h2 class="subheading-decorated">Poznajcie twórczynie The Awwwesomes</h2>
         <div class="mentors row">
-            <div class="mentor cf col-md-6">
-                <div class="col-md-4"><img src="/img/aga.jpg" alt="Aga Naplocha" class="mentor__photo"></div>
-                <div class="col-md-8 mentor__info">
-                    <h3 class="mentor__name">Aga</h3>
-                    <p>Designer i frontendowiec w <a href="http://www.adobe.com/pl/" target="_blank">Adobe</a>. Najbardziej lubi prototypować w HTML i CSS. Uwielbia jeść, a w wolnej chwili uczy się szyć. The Awwwesomes to dla niej szansa na zbudowanie fajnej społeczności.</p>
-                    <p class="mentor__contact">
-                        <a href="https://twitter.com/aganaplocha" target="_blank"><img src="/img/twitter.svg" alt="Twitter Agnieszki"></a>
-                        <a href="http://aganaplocha.com/" target="_blank"><img src="/img/www.svg" class="www-icon" alt="Strona WWW Agnieszki"></a>
-                </div>
+          <div class="mentor cf col-md-6">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="/img/aga.jpg" alt="Aga Naplocha" class="mentor__photo">
+              </div>
+              <div class="col-md-8 mentor__info">
+                <h3 class="mentor__name">Aga</h3>
+                <p>Designer i frontendowiec w <a href="http://www.adobe.com/pl/" target="_blank">Adobe</a>. Najbardziej lubi prototypować w HTML i CSS. Uwielbia jeść, a w wolnej chwili uczy się szyć. The Awwwesomes to dla niej szansa na zbudowanie fajnej społeczności.</p>
+                <p class="mentor__contact">
+                  <a href="https://twitter.com/aganaplocha" target="_blank">
+                    <img src="/img/twitter.svg" alt="Twitter Agnieszki">
+                  </a>
+                  <a href="http://aganaplocha.com/" target="_blank">
+                    <img src="/img/www.svg" class="www-icon" alt="Strona WWW Agnieszki">
+                  </a>
                 </p>
+              </div>
             </div>
-            <div class="mentor cf col-md-6">
-                <div class="col-md-4"><img src="/img/marta.jpg" alt="Marta Sztybor" class="mentor__photo"></div>
-                <div class="col-md-8 mentor__info">
-                    <h3 class="mentor__name">Marta</h3>
-                    <p>Programistka front-end w <a href="http://10clouds.com/" target="_blank">10Clouds</a>. Lubi porządkować swój kod CSS. W wolnym czasie zwiedza nowe miejsca z książką pod pachą. Dla Marty The Awwwesomes to okazja, by podzielić się swoją wiedzą.</p>
-                    <p class="mentor__contact">
-                        <a href="https://twitter.com/sztyborek" target="_blank"><img src="/img/twitter.svg" alt="Twitter Marty"></a>
-                        <a href="http://martasztybor.pl" target="_blank"><img src="/img/www.svg" alt="Strona WWW Marty" class="www-icon"></a>
-                    </p>
-                </div>
+          </div>
+
+          <div class="mentor cf col-md-6">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="/img/marta.jpg" alt="Marta Sztybor" class="mentor__photo">
+              </div>
+              <div class="col-md-8 mentor__info">
+                <h3 class="mentor__name">Marta</h3>
+                <p>Programistka front-end w <a href="http://10clouds.com/" target="_blank">10Clouds</a>. Lubi porządkować swój kod CSS. W wolnym czasie zwiedza nowe miejsca z książką pod pachą. Dla Marty The Awwwesomes to okazja, by podzielić się swoją wiedzą.</p>
+                <p class="mentor__contact">
+                  <a href="https://twitter.com/sztyborek" target="_blank">
+                    <img src="/img/twitter.svg" alt="Twitter Marty">
+                  </a>
+                  <a href="http://martasztybor.pl" target="_blank">
+                    <img src="/img/www.svg" alt="Strona WWW Marty" class="www-icon">
+                  </a>
+                </p>
+              </div>
             </div>
+          </div>
         </div>
     </section>
     <section id="venue" class="text-center container">
@@ -217,12 +234,37 @@
     <section id="partners" class="container">
         <h1 class="heading-decorated"><span>Partnerzy</span></h1>
         <h2 class="subheading-decorated">Ogromne podziękowania dla:</h2>
+
+        <h3 class="text-center">Sponsorzy</h3>
         <ul class="partners">
-            <li>
-                <a href="http://10clouds.com/" target="_blank">
-                    <img src="/img/10C.png" alt="10Clouds logo">
-                </a>
-            </li>
+          <li>
+            <a href="http://10clouds.com/" target="_blank">
+                <img src="/img/10C.png" alt="10Clouds logo">
+            </a>
+          </li>
+        </ul>
+
+        <h3 class="text-center">Partnerzy</h3>
+        <ul class="partners">
+          <li>
+            <a href="https://www.campus.co/warsaw/en" target="_blank">
+              <img src="/img/google-campus.jpg" alt="Google Campus logo">
+            </a>
+          </li>
+          <li>
+            <a href="http://womenintechnology.pl/" target="_blank">
+              <img src="/img/wit.png" alt="Women in Technology logo">
+            </a>
+          </li>
+        </ul>
+
+        <h3 class="text-center">Patronat medialny</h3>
+        <ul class="partners">
+          <li>
+            <a href="http://radiokampus.waw.pl/" target="_blank">
+              <img src="/img/radio-kampus.svg" alt="Radio Kampus logo">
+            </a>
+          </li>
         </ul>
     </section>
     <footer class="text-center">
@@ -255,10 +297,11 @@
     </footer>
     <!-- bower:js -->
 
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+
     <!-- endinject -->
     <!-- inject:js -->
-    <script src="/dist/js/vendor-598d40c443.min.js"></script>
-    <script src="/dist/js/bundle-d0e120f4c5.min.js"></script>
+    <script src="/dev/js/main.js"></script>
     <!-- endinject -->
     <!-- Google Analytics -->
     <script>
