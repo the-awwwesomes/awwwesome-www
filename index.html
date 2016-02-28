@@ -211,25 +211,26 @@
           </div>
         </div>
     </section>
-    <section id="venue" class="text-center container">
+    <section id="venue" class="venue container">
         <h1 class="heading-decorated"><span>Miejsce</span></h1>
         <h2 class="subheading-decorated">Gdzie będziemy się spotykać</h2>
-        <p>Już niedługo ogłosimy miejsce, w którym odbywać się będą zajęcia! </br> Zapisz się na nasz newsletter, by być na bieżąco:</p>
-        <!-- Begin MailChimp Signup Form -->
-        <div id="mc_embed_signup">
-            <form action="//theawwwesomes.us12.list-manage.com/subscribe/post?u=0c3b762bc38a0e1e54f308685&amp;id=16d70c9c20" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mailchimp-form validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-                    <input type="email" value="" name="EMAIL" class="mailchimp-mail" id="mce-EMAIL" placeholder="Twój email" required>
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                        <input type="text" name="b_0c3b762bc38a0e1e54f308685_16d70c9c20" tabindex="-1" value="">
-                    </div>
-                    <div class="clear">
-                        <input type="submit" value="Zapisz się" name="subscribe" id="mc-embedded-subscribe" class="mailchimp-btn">
-                    </div>
-                </div>
-            </form>
+        
+        <div class="row">
+          <div class="col-sm-6">
+            <div id="map" class="venue__map"></div>
+          </div>
+          <div class="col-sm-6">
+            <p>Wszystkie zajęcia będą się odbywać w Google Campus Warszawa. Serdecznie dziękujemy Google Campus za udostępnienie przestrzeni!</p>
+
+            <p><strong>Google Campus Warszawa</strong></p>
+            <p><strong>Ząbkowska 27/31, 03-736 Warszawa</strong></p>
+
+            <a href="https://www.campus.co/warsaw/en" target="_blank">
+              <img src="/img/www.svg" alt="Strona WWW Google Campus Warszawa" 
+                   class="www-icon">
+            </a>
+          </div>
         </div>
-        <!--End mc_embed_signup-->
     </section>
     <section id="partners" class="container">
         <h1 class="heading-decorated"><span>Partnerzy</span></h1>
@@ -296,6 +297,23 @@
         <small>Warszawa, The Awwwesomes 2016</small>
     </footer>
     <!-- bower:js -->
+
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 52.2550728, lng: 21.0453946},
+          zoom: 16
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: 52.2550728, lng: 21.0453946},
+          map: map,
+          title: 'Google Campus Warsaw'
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+         async defer></script>
 
     <script src="/bower_components/jquery/dist/jquery.js"></script>
 
