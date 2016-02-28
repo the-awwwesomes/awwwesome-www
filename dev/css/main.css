@@ -324,7 +324,7 @@ header a:hover {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    margin: 6rem 0;
+    margin: 4rem 0;
 }
 
 .partners li {
@@ -338,7 +338,7 @@ header a:hover {
 }
 
 .partners img {
-    max-width: 300px;
+    max-width: 200px;
 }
 
 .code-of-conduct {
