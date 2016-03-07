@@ -68,6 +68,10 @@ h5 {
     font-weight: 700;
 }
 
+ul.text {
+    font-weight: normal;
+}
+
 .text-center {
     text-align: center;
 }
