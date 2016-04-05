@@ -45,6 +45,7 @@
                 <li><a href="#venue">Miejsce</a></li>
                 <li><a href="#partners">Partnerzy</a></li>
                 <li><a href="/code-of-conduct/">Code of Conduct</a></li>
+                <li><a href="/poradnik/">Poradnik</a></li>
                 <li><a href="http://theawwwesomes.org/en" target="_blank">English</a></li>
                 <li><a href="https://theawwwesomes.typeform.com/to/qSRAxH" target="_blank" class="header__apply-btn-small">Aplikuj</a></li>
             </ul>
@@ -922,25 +923,8 @@
     </footer>
     <!-- bower:js -->
 
-    <script>
-      function initMap() {
-        var mapDiv = document.getElementById('map');
-        var map = new google.maps.Map(mapDiv, {
-          center: {lat: 52.2550728, lng: 21.0453946},
-          zoom: 16
-        });
-        var marker = new google.maps.Marker({
-          position: {lat: 52.2550728, lng: 21.0453946},
-          map: map,
-          title: 'Google Campus Warsaw'
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-         async defer></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
 
-    <!-- inject:js -->
-    <script src="/dev/js/main.js"></script>
     <!-- endinject -->
     <!-- Google Analytics -->
     <script>
