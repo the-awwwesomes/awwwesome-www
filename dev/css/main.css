@@ -570,6 +570,7 @@ footer address a:hover {
 
 footer small {
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .footer__social svg {
