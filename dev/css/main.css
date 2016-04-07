@@ -149,9 +149,7 @@ path#XMLID_13_ {
     
 }
 
-.hero--code-of-conduct {
-    min-height: 345px;
-}
+
 .hero__logo {
     font-weight: 800;
     line-height: 1;
@@ -166,7 +164,7 @@ path#XMLID_13_ {
 
 .hero__logo.guide {
     font-size: 5rem;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 .hero__logo h1 {
     letter-spacing: 9px;
@@ -183,6 +181,8 @@ svg.heroBanner-svg {
     left: -200px;
     top: -100px;
 }
+
+
 .hero-svg {
     position: absolute;
     z-index: -10;
@@ -195,6 +195,14 @@ svg.heroBanner-svg {
 
 .hero.guide .hero-svg  {
     height: 250px;
+}
+
+section.hero.hero--code-of-conduct .hero-svg {
+    height: 300px;
+}
+
+section.hero.hero--code-of-conduct {
+    height: 300px;
 }
 @media (min-width: 768px) {
     .hero__logo {
@@ -526,6 +534,13 @@ footer small {
 article h1,h2,h3,h4 {
     color: #f16060;
 }
+
+section.icons {
+    background: url(../../img/background-pattern-guide.svg) fixed #f3f3f3;
+    /*background: #FFD4D4;*/
+    padding: 50px 0;
+}
+
 .article-img {
     width: 70%;
     margin: 0 auto;
@@ -534,18 +549,39 @@ article h1,h2,h3,h4 {
     margin-top: 20px;
 }
 
+.article-number-circle-container {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 30px;
+    background-color: #F594A4;
+    z-index: 0;
+    border: 4px solid #F594A4;
+    vertical-align: middle;
+}
+
 span.article-number-circle {
+    display: inline-block;
+    margin-right: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    width: 55px;
+    margin-top: -5px;
+}
+
+/*span.article-number-circle::before {
     height: 40px;
     width: 40px;
     display: inline-block;
     margin-right: 5px;
     border-radius: 20px;
     background-color: #f16060;
-    color: #fff;
-    text-align: center;
-    font-size: 40px;
+    z-index: 0;
+    content: " "
 }
-
+*/
 h3 span.article-number-circle { 
     color: #fff;
 }
@@ -558,7 +594,6 @@ h3 span.article-number-circle {
     width: 60%;
     margin:0 auto;
     display: block;
-    margin-top: 60px;
 }
 
 
@@ -581,6 +616,22 @@ h3 span.article-number-circle {
     margin-top: 20px;
 }
 
+.svg-caption-guide {
+    margin: 20px 0 50px 0;
+    width: 350px;
+}
+
+.st0caption {
+  stroke-dasharray: 900;
+  animation: dash 5s linear;
+
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
 
 path#XMLID_16_ {
     -webkit-animation: show 1.5s infinite;
