@@ -320,9 +320,6 @@ section.hero.hero--code-of-conduct {
     }
 }
 
-section.apply a {
-    color: #fff;
-}
 
 .apply {
     background: url('../../img/background-pattern.svg') repeat #f06463;
@@ -342,7 +339,8 @@ section.apply a {
 }
 
 .apply p.underline {
-        border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
 }
 
 a.apply-link {
@@ -605,10 +603,10 @@ footer small {
 
 /*ARTICLE*/
 
-article h1,
-h2,
-h3,
-h4 {
+article.guide h1,
+article.guide h2,
+article.guide h3,
+article.guide h4 {
     color: #f16060;
 }
 
