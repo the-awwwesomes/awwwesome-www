@@ -80,12 +80,12 @@ header a:hover {
 }
 
 
-path#tool-animate {
+/*path#tool-animate {
     -webkit-animation: movingOne 2s infinite forwards;
     animation: movingOne 2s infinite forwards;
     transform-origin: 50% 50%;
 }
-
+*/
 
 /*g#XMLID_431_ {
     -webkit-animation: movingTwo 2s infinite forwards;
@@ -99,17 +99,19 @@ path#tool-animate {
     transform-origin: 50% 50%;
 }*/
 
-path#XMLID_43_ {
+path#XMLID_43tear_ {
     -webkit-animation: movingThree 2s infinite;
     animation: movingThree 2s infinite;
     transform-origin: 50% 50%;
 }
 
-path#XMLID_13_ {
+path#XMLID_13tear_ {
     -webkit-animation: movingThree 2s infinite;
     animation: movingThree 2.5s infinite;
     transform-origin: 50% 50%;
 }
+
+
 
 @keyframes movingOne {
     0% {
