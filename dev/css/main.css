@@ -97,7 +97,7 @@ path#tool-animate {
     -webkit-animation: movingOne 2s infinite forwards;
     animation: movingOne 2s infinite forwards;
     transform-origin: 50% 50%;
-}
+}*/
 
 path#XMLID_43_ {
     -webkit-animation: movingThree 2s infinite;
@@ -110,7 +110,7 @@ path#XMLID_13_ {
     animation: movingThree 2.5s infinite;
     transform-origin: 50% 50%;
 }
-*/
+
 @keyframes movingOne {
     0% {
         transform: translateY(0px);
@@ -320,6 +320,10 @@ section.hero.hero--code-of-conduct {
     }
 }
 
+section.apply a {
+    color: #fff;
+}
+
 .apply {
     background: url('../../img/background-pattern.svg') repeat #f06463;
     background-attachment: fixed;
@@ -335,6 +339,14 @@ section.hero.hero--code-of-conduct {
     margin: .1rem 0;
     font-weight: 400;
     line-height: 135%;
+}
+
+.apply p.underline {
+        border-bottom: 2px solid #fff;
+}
+
+a.apply-link {
+    color: #fff;
 }
 
 .apply__c2a {
@@ -827,6 +839,19 @@ path#XMLID_18_ {
 #XMLID_caption1_, #XMLID_caption2_ {
     -webkit-animation: textAnimation 4s infinite;
     animation: textAnimation 4s infinite;
+}
+
+.svg-question-mark {
+    height: 70px;
+    position: absolute;
+    top: -10px;
+    right: 35px;
+}
+
+#XMLID_16_qm {
+    -webkit-animation: pulse 1.8s infinite;
+    animation: pulse 1.8s infinite;
+    transform-origin: 50% 50%;
 }
 
 @keyframes textAnimation {
