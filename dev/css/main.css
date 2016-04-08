@@ -341,8 +341,8 @@ section.apply a {
     line-height: 135%;
 }
 
-.apply p.underline {
-        border-bottom: 2px solid #fff;
+.apply .underline {
+    border-bottom: 2px solid #fff;
 }
 
 a.apply-link {
@@ -517,6 +517,7 @@ a.apply-link {
     transition: all .3s ease-in-out;
     font-size: 16rem;
     margin: 0;
+    color: white;
 }
 
 .number-box-subtitle {

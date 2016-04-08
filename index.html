@@ -21,7 +21,7 @@
     <!-- bower:css -->
     <!-- endinject -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="/dist/css/bundle-47d121ae48.min.css">
+    <link rel="stylesheet" href="/dist/css/bundle-a527ad5543.min.css">
     <!-- endinject -->
     <!--[if lt IE 9]>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -771,7 +771,11 @@
     </section>
     <section class="apply">
         <p>Zapisy na edycję wiosenną zostały zamknięte!</p>
-        <p class="underline"><a href="/poradnik" class="apply-link">Przeczytaj poradnik jak w przyszłości aplikować na nasze warsztaty</a></p>
+        <p>
+            <a href="/poradnik" class="underline apply-link">
+                Przeczytaj poradnik jak w przyszłości aplikować na nasze warsztaty
+            </a>
+        </p>
     </section>
     <section class="container">
         <h1 class="heading-decorated"><span>Kto za tym stoi?</span></h1>
@@ -867,7 +871,7 @@
             </li>
             <li>
                 <a href="http://spotkania-it.pl/" target="_blank">
-                    <img src="/img/spotkania-it.png" alt="Radio Kampus logo">
+                    <img src="/img/spotkania-it.png" alt="Spotkania IT logo">
                 </a>
             </li>
         </ul>
@@ -899,29 +903,25 @@
             <br/>#theawwwesomes #TheAwww </p>
         <small>Warszawa, The Awwwesomes 2016</small>
     </footer>
-    <!-- bower:js -->
     <script>
-    function initMap() {
+      function initMap() {
         var mapDiv = document.getElementById('map');
         var map = new google.maps.Map(mapDiv, {
-            center: {
-                lat: 52.2550728,
-                lng: 21.0453946
-            },
-            zoom: 16
+          center: {lat: 52.2550728, lng: 21.0453946},
+          zoom: 16
         });
         var marker = new google.maps.Marker({
-            position: {
-                lat: 52.2550728,
-                lng: 21.0453946
-            },
-            map: map,
-            title: 'Google Campus Warsaw'
+          position: {lat: 52.2550728, lng: 21.0453946},
+          map: map,
+          title: 'Google Campus Warsaw'
         });
-    }
+      }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
-    <script src="/dist/js/vendor-da003068bc.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+         async defer></script>
+
+    <!-- bower:js -->
+    <script src="/dist/js/vendor-598d40c443.min.js"></script>
     <script src="/dist/js/bundle-d0e120f4c5.min.js"></script>
     <!-- endinject -->
     <!-- Google Analytics -->
