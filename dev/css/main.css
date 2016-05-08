@@ -734,6 +734,34 @@ h3 span.article-number-circle {
     transition: all .5s ease-in-out;
 }
 
+.tutorial-img {
+    margin: 40px 0 0px 0;
+    width: 100%;
+}
+
+button.tutorial-btn {
+    background: #f06463;
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    margin: 50px 0 20px 0;
+    transition: all .5s ease-in-out;
+}
+
+button.tutorial-btn a {
+    color: #fff;
+}
+
+button.tutorial-btn:hover {
+    background: #393b5d;
+}
+
+
+
 @media screen and (max-width: 768px) {
     .svg-pic-article {
         margin-bottom: 30px;
