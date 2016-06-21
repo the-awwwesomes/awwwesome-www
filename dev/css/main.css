@@ -65,7 +65,6 @@ header a:hover {
 .hero {
     height: 400px;
     padding: 0 3rem 4.5rem;
-    /* background: url(../../img/hero.svg) no-repeat fixed #f28e9c;*/
     background-size: 140%;
     display: flex;
     background-position: top center;
@@ -78,26 +77,6 @@ header a:hover {
 .hero.guide {
     height: 250px;
 }
-
-
-/*path#tool-animate {
-    -webkit-animation: movingOne 2s infinite forwards;
-    animation: movingOne 2s infinite forwards;
-    transform-origin: 50% 50%;
-}
-*/
-
-/*g#XMLID_431_ {
-    -webkit-animation: movingTwo 2s infinite forwards;
-    animation: movingTwo 2s infinite forwards;
-}
-*/
-
-/*path#XMLID_283_ {
-    -webkit-animation: movingOne 2s infinite forwards;
-    animation: movingOne 2s infinite forwards;
-    transform-origin: 50% 50%;
-}*/
 
 path#XMLID_43tear_ {
     -webkit-animation: movingThree 2s infinite;
@@ -332,7 +311,7 @@ section.hero.hero--code-of-conduct {
     margin-bottom: 2rem;
 }
 
-.apply p {
+.apply-info {
     font-family: 'brandon-grotesque', sans-serif;
     font-size: 2.2rem;
     margin: .1rem 0;
@@ -507,11 +486,12 @@ a.apply-link {
     }
 }
 
-.number-box:hover h2 {
+.number-box:hover .number-box-number {
     transform: scale(1.3);
 }
 
-.number-box h2 {
+.number-box-number {
+    display: block;
     top: 10rem;
     transition: all .3s ease-in-out;
     font-size: 16rem;
@@ -519,17 +499,22 @@ a.apply-link {
     color: white;
 }
 
-.number-box-subtitle {
-    position: relative;
-    top: -40px;
-    text-transform: uppercase;
+.number-box-subtitle,
+.number-box-description {
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 .number-box-subtitle {
+    display: block;
+    position: relative;
+    top: -40px;
+    text-transform: uppercase;
     margin: 0;
 }
 
 .number-box-description {
+    display: block;
     margin-top: -40px;
 }
 
@@ -614,7 +599,6 @@ article.guide h4 {
 
 section.icons {
     background: url(../../img/background-pattern-guide.svg) fixed #f3f3f3;
-    /*background: #FFD4D4;*/
     padding: 50px 0;
 }
 
@@ -652,18 +636,6 @@ span.article-number-circle {
     margin-top: -5px;
 }
 
-
-/*span.article-number-circle::before {
-    height: 40px;
-    width: 40px;
-    display: inline-block;
-    margin-right: 5px;
-    border-radius: 20px;
-    background-color: #f16060;
-    z-index: 0;
-    content: " "
-}
-*/
 .guide-gif-container {
     margin: 40px 0;
 }
@@ -684,8 +656,6 @@ span.article-number-circle {
 .guide-gif-2 {
     z-index: 5;
     margin-left: -10px;
-/*    margin-top: 20px;
-    top: 20px;*/
 }
 
 .guide-gif-1 img, 
@@ -700,7 +670,6 @@ span.article-number-circle {
 }
 .guide-gif-caption {
     background: #F16060;
-    /* width: 300px; */
     display: inline-block;
     padding: 6px 10px;
     color: #fff;
@@ -739,28 +708,26 @@ h3 span.article-number-circle {
     width: 100%;
 }
 
-button.tutorial-btn {
+.tutorial-btn {
+    display: block;
     background: #f06463;
     border: 0;
     padding: 10px;
     width: 100%;
     text-transform: uppercase;
+    text-align: center;
     color: #fff;
     font-size: 0.8em;
     letter-spacing: 1px;
     margin: 50px 0 20px 0;
-    transition: all .5s ease-in-out;
+    transition: .5s ease-in-out;
+    transition-property: color, background;
 }
 
-button.tutorial-btn a {
+.tutorial-btn:hover {
+    background: #393b5d;
     color: #fff;
 }
-
-button.tutorial-btn:hover {
-    background: #393b5d;
-}
-
-
 
 @media screen and (max-width: 768px) {
     .svg-pic-article {
