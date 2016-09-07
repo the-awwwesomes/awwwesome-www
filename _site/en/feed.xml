@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Awwwesomes - Darmowe warsztaty z programowania HTML i CSS</title>
+    <description>Społeczność programistów front-end. Darmowe warsztaty z programowania HTML &amp; CSS.</description>
+    <link>http://theawwwesomes.org/en/</link>
+    <atom:link href="http://theawwwesomes.org/en/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>The Awwwesomes Meetup</title>
+        
+          <description>&lt;p&gt;Hello! This is our first meetup!&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 08 Aug 2016 03:00:00 +0200</pubDate>
+        
+          <link>http://theawwwesomes.org/en/css/2016/08/08/first-meetup-example/</link>
+        
+        
+          <guid isPermaLink="true">http://theawwwesomes.org/en/css/2016/08/08/first-meetup-example/</guid>
+        
+      </item>
+    
+      <item>
+        <title>Example blogpost</title>
+        
+          <description>&lt;p&gt;CSS is a fairly simple language to learn on a basic level and to kick off with the coding. But when your stylesheets start to grow, it becomes more and more difficult to untangle messed up classes. Here I collected a couple of tips to help you write more manageable code. They’ll be useful no matter if you’re working on a project’s styles on your own or in a team.&lt;/p&gt;
+</description>
+        
+        <pubDate>Fri, 03 Jun 2016 03:00:00 +0200</pubDate>
+        
+          <link>http://theawwwesomes.org/en/css/2016/06/03/example-blogpost/</link>
+        
+        
+          <guid isPermaLink="true">http://theawwwesomes.org/en/css/2016/06/03/example-blogpost/</guid>
+        
+      </item>
+    
+  </channel>
+</rss>

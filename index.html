@@ -21,7 +21,12 @@
     <!-- bower:css -->
     <!-- endinject -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="/dist/css/bundle-8fe2597d86.min.css">
+    <link rel="stylesheet" href="/dev/css/normalize.css">
+    <link rel="stylesheet" href="/dev/css/bootstrap.css">
+    <link rel="stylesheet" href="/dev/css/base.css">
+    <link rel="stylesheet" href="/dev/css/main.css">
+    <link rel="stylesheet" href="/dev/css/morphing-btn.css">
+    <link rel="stylesheet" href="/dev/css/mailchimp-form.css">
     <!-- endinject -->
     <!--[if lt IE 9]>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -35,13 +40,14 @@
         </button>
         <nav>
             <ul class="js-menu">
-                <li><a href="#offer">O warsztatach</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#venue">Miejsce</a></li>
-                <li><a href="#tutorial">Tutorial</a></li>
+                <li><a href="/#offer">O warsztatach</a></li>
+                <li><a href="/#faq">FAQ</a></li>
+                <li><a href="/#venue">Miejsce</a></li>
+                <li><a href="/#tutorial">Tutorial</a></li>
                 <li><a href="/poradnik/">Poradnik</a></li>
                 <li><a href="/code-of-conduct/">Code of Conduct</a></li>
                 <li><a href="/en" target="_blank">English</a></li>
+                <li><a href="https://theawwwesomes.typeform.com/to/Vp372J" target="_blank" class="header__apply-btn">Aplikuj</a></li>
             </ul>
         </nav>
     </header>
@@ -676,12 +682,11 @@
             <time datetime="2016-10-12">12/10/2016</time>
             w Warszawie 
         </h3>
-        <h3 class="hero__subheader">
-            Zgłoszenia potrwają od
-            <time datetime="2016-09-08">08/09</time>
-            do
-            <time datetime="2016-09-13">13/09/2016</time>
-        </h3>
+        <a href="https://theawwwesomes.typeform.com/to/Vp372J" 
+           target="_blank" 
+           class="hero__c2a-btn header__apply-btn">
+            Chcę aplikować!
+        </a>
     </section>
     <section id="tutorial" class="offer-section container">
         <h1 class="heading-decorated"><span>Nasz tutorial</span></h1>
@@ -778,15 +783,16 @@
         </div>
     </section>
     <section class="apply">
-        <h1 class="apply-info">
-            Start jesiennej edycji już 12 października!<br>
-            Formularz zgłoszeniowy będzie otwarty od 8 do 13 września.
-        </h1>
+        <p>Zgłoś się już teraz!<br>
+        Zapisy przyjmujemy do 13 września włącznie, a listę przyjętych osób 
+        ogłosimy 1 października.<br>
+        Każdy zostanie poinformowany mailowo o decyzji odnośnie przyjęcia.</p>
         <p class="apply-info">
             <a href="/poradnik" class="underline apply-link">
                 Przeczytaj poradnik jak aplikować na nasze warsztaty
             </a>
         </p>
+        <a href="https://theawwwesomes.typeform.com/to/Vp372J" target="_blank" class="apply__c2a">Aplikuję!</a>
     </section>
     <section class="container">
         <h1 class="heading-decorated"><span>Kto za tym stoi?</span></h1>
@@ -839,7 +845,40 @@
     </section>
     <section id="partners" class="container">
         <h1 class="heading-decorated"><span>Partnerzy</span></h1>
-        <p class="text-center">Już niebawem ogłosimy partnerów drugiej edycji!</p>
+        <h2 class="subheading-decorated">Ogromne podziękowania dla:</h2>
+        <h3 class="text-center">Sponsorzy</h3>
+        <ul class="partners">
+            <li>
+                <a href="http://coderslab.pl/" target="_blank">
+                    <img src="/img/coders-lab.svg" alt="Coders Lab logo">
+                </a>
+            </li>
+        </ul>
+        <ul class="partners">
+            <li>
+                <a href="http://functionite.com/" target="_blank">
+                    <img src="/img/functionite.png" alt="Functionite logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.88em.eu/pl/" target="_blank">
+                    <img src="/img/88em.png" alt="88em logo">
+                </a>
+            </li>
+        </ul>
+        <h3 class="text-center">Patronat medialny</h3>
+        <ul class="partners">
+            <li>
+                <a href="http://radioaktywne.pl/" target="_blank">
+                    <img src="/img/radioaktywne.png" alt="RadioAktywne logo">
+                </a>
+            </li>
+            <li>
+                <a href="http://grafmag.pl/" target="_blank">
+                    <img src="/img/grafmag.svg" alt="Grafmag logo">
+                </a>
+            </li>
+        </ul>
         <p class="text-center">Chcesz wesprzeć naszą inicjatywę? <a href="mailto:contact@theawwwesomes.org">Napisz do nas!</a></p>
     </section>
     <footer class="text-center">
@@ -892,8 +931,7 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
     <!-- bower:js -->
-    <script src="/dist/js/vendor-571415aa87.min.js"></script>
-    <script src="/dist/js/bundle-d0e120f4c5.min.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endinject -->
     <!-- Google Analytics -->
     <script>
