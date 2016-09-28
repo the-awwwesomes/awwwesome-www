@@ -882,8 +882,20 @@
     </section>
     <section id="venue" class="venue container">
         <h1 class="heading-decorated"><span>Miejsce</span></h1>
-        <h2 class="subheading-decorated">Gdzie odbywają się warsztaty</h2>
-        <p class="text-center">Już niedługo ogłosimy, gdzie odbędzie się druga edycja!</p>
+        <h2 class="subheading-decorated">Gdzie będziemy się spotykać</h2>
+        <div class="row">
+            <div class="col-sm-6">
+                <div id="map" class="venue__map"></div>
+            </div>
+            <div class="col-sm-6">
+                <p>Wszystkie zajęcia będą się odbywać w Polsko-Japońskiej Akademii Technik Komputerowych w Warszawie. Serdecznie dziękujemy PJATK za udostępnienie przestrzeni!</p>
+                <p><strong>Polsko-Japońska Akademia Technik Komputerowych</strong></p>
+                <p><strong>Koszykowa 86, 02-008 Warszawa</strong></p>
+                <a href="http://www.pja.edu.pl/" target="_blank">
+                    <img src="/img/www.svg" alt="Strona WWW PJATK" class="www-icon">
+                </a>
+            </div>
+        </div>
     </section>
     <section id="partners" class="container">
         <h1 class="heading-decorated"><span>Partnerzy</span></h1>
@@ -907,6 +919,15 @@
                     <img src="/img/88em.png" alt="88em logo">
                 </a>
             </li>
+        </ul>
+        <h3 class="text-center">Partnerzy</h3>
+        <ul class="partners">
+            <li>
+                <a href="http://www.pja.edu.pl/" target="_blank">
+                    <img src="/img/pjatk.png" alt="PJATK logo" style="width:150px">
+                </a>
+            </li>
+            <li>
         </ul>
         <h3 class="text-center">Patronat medialny</h3>
         <ul class="partners">
@@ -956,15 +977,15 @@
         var mapDiv = document.getElementById('map');
         var map = new google.maps.Map(mapDiv, {
             center: {
-                lat: 52.2550728,
-                lng: 21.0453946
+                lat: 52.2239023,
+                lng: 20.9917673
             },
             zoom: 16
         });
         var marker = new google.maps.Marker({
             position: {
-                lat: 52.2550728,
-                lng: 21.0453946
+                lat: 52.2239023,
+                lng: 20.9917673
             },
             map: map,
             title: 'Google Campus Warsaw'
