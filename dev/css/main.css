@@ -202,6 +202,13 @@ section.hero.hero--code-of-conduct {
     font-weight: 700;
 }
 
+.hero__subheader a,
+.hero__subheader a:hover {
+    color: white;
+    display: inline-block;
+    border-bottom: 3px solid white;
+}
+
 .hero__subheader_article {
     margin-top: 100px;
     color: #fff;
