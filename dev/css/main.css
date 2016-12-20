@@ -193,9 +193,11 @@ svg.heroBanner-svg {
     background: url('../../img/hero.svg') no-repeat fixed #f28e9c;
 }
 
-.hero.guide .hero-svg {
-    height: 250px;
+section.hero.guide, .hero.guide .hero-svg {
+    height: 270px;
 }
+
+
 
 section.hero.hero--code-of-conduct .hero-svg {
     height: 300px;
