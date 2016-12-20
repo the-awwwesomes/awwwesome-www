@@ -63,7 +63,7 @@ header a:hover {
 }
 
 .hero {
-    height: 400px;
+    height: 460px;
     padding: 0 3rem 4.5rem;
     background-size: 140%;
     display: flex;
@@ -74,9 +74,31 @@ header a:hover {
     overflow: hidden;
 }
 
-.hero.guide {
-    height: 250px;
+.social-media-icons {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
 }
+
+.social-media-icons a img {
+    height: 40px;
+    padding: 0 5px;
+}
+
+.social-media-icons img {
+    transition: .1s ease-in-out;
+}
+
+.social-media-icons a:hover {
+    text-decoration: none;
+    border: none;
+}
+
+.social-media-icons a:hover img{
+    transform: scale(1.2);
+}
+
 
 path#XMLID_43tear_ {
     -webkit-animation: movingThree 2s infinite;
@@ -164,11 +186,11 @@ svg.heroBanner-svg {
 .hero-svg {
     position: absolute;
     z-index: -10;
-    background-color: #f28e9c;
     left: 0;
     right: 0;
-    height: 400px;
+    height: 450px;
     overflow: hidden;
+    background: url('../../img/hero.svg') no-repeat fixed #f28e9c;
 }
 
 .hero.guide .hero-svg {
@@ -193,13 +215,11 @@ section.hero.hero--code-of-conduct {
 }
 
 .hero__subheader {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin: 0;
-    letter-spacing: 2px;
     margin-bottom: 1rem;
     color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .hero__subheader a,
@@ -228,10 +248,10 @@ section.hero.hero--code-of-conduct {
 .hero__c2a-btn {
     color: #fff;
     font-size: 1.6rem;
-    padding: 0.8rem 1.8rem;
+    padding: 0.9rem 1.8rem;
     width: 300px;
     background: #151d46;
-    border-color: #151d46;
+    border: none;
     margin-top: 20px;
     letter-spacing: 3px;
     text-align: center;
@@ -314,14 +334,14 @@ section.hero.hero--code-of-conduct {
     background-attachment: fixed;
     color: white;
     text-align: center;
-    padding: 4.5rem 0;
+    padding: 3.5rem 0 6.5rem 0;
     margin-bottom: 2rem;
 }
 
 .apply-info {
     font-family: 'brandon-grotesque', sans-serif;
     font-size: 2.2rem;
-    margin: .1rem 0;
+    margin: .1rem 0 -0.7rem 0;
     font-weight: 400;
     line-height: 135%;
 }
@@ -330,8 +350,13 @@ section.hero.hero--code-of-conduct {
     border-bottom: 2px solid #fff;
 }
 
+.apply p {
+    font-size: 2rem;
+}
+
 a.apply-link {
     color: #fff;
+    margin-bottom: -1rem;
 }
 
 .apply__c2a {
@@ -445,6 +470,11 @@ a.apply-link {
 .partners li {
     display: inline-block;
     margin: 0 2.5rem;
+}
+
+.partners li.margin-none {
+    margin: 0;
+    display: block;
 }
 
 .partners a {
