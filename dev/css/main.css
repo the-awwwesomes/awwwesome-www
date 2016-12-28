@@ -81,6 +81,13 @@ header a:hover {
     top: 15px;
 }
 
+@media screen and (max-width: 1180px) {
+    .social-media-icons { 
+        display: none;
+    }
+}
+
+
 .social-media-icons a img {
     height: 40px;
     padding: 0 5px;
@@ -193,6 +200,26 @@ svg.heroBanner-svg {
     background: url('../../img/hero.svg') no-repeat fixed #f28e9c;
 }
 
+@media (min-width: 800px) and (max-width: 1200px) {
+    .hero-svg {
+        background-size: 150%;
+    }
+}
+
+@media (max-width: 799px) {
+    .hero-svg {
+        background-size: auto 120%;
+        background-attachment: inherit;
+        background-position: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-svg {
+        height: 470px;
+    }
+}
+
 section.hero.guide, .hero.guide .hero-svg {
     height: 270px;
 }
@@ -224,6 +251,12 @@ section.hero.hero--code-of-conduct {
     font-weight: 500;
 }
 
+@media (max-width: 600px) {
+    .hero__subheader {
+        font-size: 1.5rem;
+    }
+}
+
 .hero__subheader a,
 .hero__subheader a:hover {
     color: white;
@@ -245,6 +278,12 @@ section.hero.hero--code-of-conduct {
     letter-spacing: 2px;
     margin-top: 0.1rem;
     text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+    .hero__main-info {
+        font-size: 1.1rem;
+    }
 }
 
 .hero__c2a-btn {
@@ -329,7 +368,6 @@ section.hero.hero--code-of-conduct {
         padding: 0 20px;
     }
 }
-
 
 .apply {
     background: url('../../img/background-pattern.svg') repeat #f06463;
@@ -685,6 +723,11 @@ footer small {
 }
 
 @media screen and (max-width: 768px) {
+    .social-media-icons {
+        left: 15px;
+        top: 20px;
+    }
+
     .svg-pic-article {
         margin-bottom: 30px;
     }
@@ -873,6 +916,6 @@ path#XMLID_18_ {
 
     .hero__logo {
         color: #151d46;
-        font-size: 4rem;
+        font-size: 3.2rem;
     }
 }
