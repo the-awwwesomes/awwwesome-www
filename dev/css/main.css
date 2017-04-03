@@ -216,7 +216,7 @@ svg.heroBanner-svg {
 
 @media (max-width: 600px) {
     .hero-svg {
-        height: 470px;
+        height: 490px;
     }
 }
 
@@ -913,7 +913,7 @@ path#XMLID_18_ {
 
 @media screen and (max-width: 625px) {
     .hero.guide, .hero.guide .hero-svg {
-        height: 350px;
+        height: 530px;
     }
 
     .hero__logo {
