@@ -508,7 +508,18 @@ a.apply-link {
     margin: 4rem 0;
 }
 
-.sponsors li {
+ul.sponsors {
+    list-style: none;
+    padding-left: 0px;
+}
+
+ul.sponsors img {
+    max-width: 300px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    -webkit-padding-start: 0px;
     list-style: none;
 }
 
