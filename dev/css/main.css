@@ -500,7 +500,7 @@ a.apply-link {
     margin-top: 2rem;
 }
 
-.partners {
+.partners, .sponsors {
     list-style-type: none;
     padding: 0;
     text-align: center;
@@ -522,8 +522,14 @@ a.apply-link {
     vertical-align: middle;
 }
 
+.sponsors img {
+    max-width: 400px;
+    cursor: pointer;
+}
+
 .partners img {
     max-width: 200px;
+    margin-bottom: 20px;
 }
 
 .code-of-conduct {
