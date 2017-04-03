@@ -507,6 +507,10 @@ a.apply-link {
     margin: 4rem 0;
 }
 
+.sponsors li {
+    list-style: none;
+}
+
 .partners li {
     display: inline-block;
     margin: 0 2.5rem;
