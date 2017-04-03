@@ -500,7 +500,7 @@ a.apply-link {
     margin-top: 2rem;
 }
 
-.partners, .sponsors {
+.partners, .sponsors, ul.sponsors {
     list-style-type: none;
     padding: 0;
     text-align: center;
