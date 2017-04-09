@@ -502,7 +502,6 @@ a.apply-link {
 
 .partners, .sponsors, ul.sponsors {
     list-style-type: none;
-    list-style: none;
     padding: 0;
     text-align: center;
     margin: 4rem 0;
@@ -514,7 +513,7 @@ ul.sponsors {
 }
 
 ul.sponsors img {
-    max-width: 300px;
+    max-width: 350px;
     display: block;
     text-align: center;
     margin: 0 auto;
@@ -536,11 +535,6 @@ ul.sponsors img {
 .partners a {
     display: inline-block;
     vertical-align: middle;
-}
-
-.sponsors img {
-    max-width: 400px;
-    cursor: pointer;
 }
 
 .partners img {
