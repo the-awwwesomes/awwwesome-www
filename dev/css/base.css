@@ -109,3 +109,7 @@ ul.text {
 footer {
     margin-top: 10rem;
 }
+
+.padding-left {
+  padding-left: 15px;
+}

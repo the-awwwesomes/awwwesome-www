@@ -216,7 +216,7 @@ svg.heroBanner-svg {
 
 @media (max-width: 600px) {
     .hero-svg {
-        height: 470px;
+        height: 490px;
     }
 }
 
@@ -500,11 +500,26 @@ a.apply-link {
     margin-top: 2rem;
 }
 
-.partners {
+.partners, .sponsors, ul.sponsors {
     list-style-type: none;
     padding: 0;
     text-align: center;
     margin: 4rem 0;
+}
+
+ul.sponsors {
+    list-style: none;
+    padding-left: 0px;
+}
+
+ul.sponsors img {
+    max-width: 350px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    -webkit-padding-start: 0px;
+    list-style: none;
 }
 
 .partners li {
@@ -524,6 +539,7 @@ a.apply-link {
 
 .partners img {
     max-width: 200px;
+    margin-bottom: 20px;
 }
 
 .code-of-conduct {
@@ -907,7 +923,7 @@ path#XMLID_18_ {
 
 @media screen and (max-width: 625px) {
     .hero.guide, .hero.guide .hero-svg {
-        height: 350px;
+        height: 530px;
     }
 
     .hero__logo {
