@@ -81,6 +81,7 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
 header {
   padding: 30px 50px;
 }
@@ -97,6 +98,13 @@ img {
   max-width: 100%;
 }
 
+img.logo {
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+}
+
 p.info {
     font-size: 0.7rem;
     letter-spacing: 1px;
@@ -104,7 +112,7 @@ p.info {
     color: #0e1943;
     text-align: center;
     text-transform: lowercase;
-    margin: 40px 0 30px;
+    margin-top: 40px;
 }
 
 p.image-caption {
@@ -132,7 +140,6 @@ h2.typing-heading {
     font-family: 'artegra_sansblack', sans-serif;
 }
 
-
 .typed-cursor {
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -140,14 +147,16 @@ h2.typing-heading {
     animation: blink 0.7s infinite;
 }
 
-a.button {
+a.btn {
     border: 0;
-    background: #ff92b4;
     padding: 8px 40px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
-    margin: 20px 0;
+    margin: 20px 0 40px 0;
+    font-size: 0.7rem;
+    display: inline-block;
+    border: 3px solid #ff92ad;
 }
 
 section.mission {
@@ -164,6 +173,11 @@ section.mission img {
 section.tutorial h2 {
   margin-bottom: 0px;
 }
+
+section.tutorial img{
+  margin-top: 20px;
+}
+
 
 .text-rotated {
     position: fixed;
