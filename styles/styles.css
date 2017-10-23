@@ -13,6 +13,12 @@ body {
     color: #0f1942;
 }
 
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: block;
+}
+
 p {
     font-size: 0.9rem;
     line-height: 180%;
@@ -157,6 +163,13 @@ a.btn {
     font-size: 0.7rem;
     display: inline-block;
     border: 3px solid #ff92ad;
+    color: #0f1942;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+a.btn:hover {
+    background: #ff92ad;
+    color: #fff;
 }
 
 section.mission {
@@ -178,13 +191,12 @@ section.tutorial img{
   margin-top: 20px;
 }
 
-
 .text-rotated {
     position: fixed;
     transform: rotate(90deg);
-    right: -190px;
-    top: 230px;
-    font-size: 30px;
+    right: -170px;
+    bottom: 180px;
+    font-size: 1.7rem;
     z-index: 10;
     letter-spacing: 1px;
     font-weight: bold;
