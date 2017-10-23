@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&subset=latin-ext');
+
+* {
+  font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #0f1942;
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 180%;
+    letter-spacing: 0.2px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'ArtegraSans-Black';
+    line-height: 150%;
+}
+
+h1 {
+  font-size: 5.71rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+nav {
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+}
+
+nav ul {
+    margin: 0;
+    color: #fff;
+    list-style: none;
+    padding: 10px 60px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav ul li a {
+  color: #0f1942;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background: #0f1942;
+  color: #fff;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+header {
+  padding: 30px 50px;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+section {
+   padding: 30px 50px;
+}
+
+img {
+  max-width: 100%;
+}
+
+img.mission-image {
+    margin-top: -80px;
+}
+
+p.info {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    line-height: 160%;
+    color: #0e1943;
+    text-align: center;
+    text-transform: lowercase;
+    margin: 40px 0 30px;
+}
+
+p.image-caption {
+    font-size: 0.7rem;
+    text-align: right;
+}
+
+video {
+    width: 100%;
+    margin-top: 40px;
+}
+
+h2.typing-heading {
+    text-align: center;
+    position: absolute;
+    font-size: 5.71rem;
+    z-index: 10;
+    margin-top: 330px;
+}
+
+.typing {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+    font-family: 'ArtegraSans-Black';
+}
+
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+a.button {
+    border: 0;
+    background: #ff92b4;
+    padding: 8px 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+section.mission{
+    background: #ffecf2;
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+section.tutorial h2 {
+  margin-bottom: 0px;
+}
+
+img.tutorial-image {
+    margin-top: -80px;
+}
+
+.text-rotated {
+    position: fixed;
+    transform: rotate(90deg);
+    right: -190px;
+    top: 230px;
+    font-size: 30px;
+    z-index: 10;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.larger-padding {
+  padding-right: 50px;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
