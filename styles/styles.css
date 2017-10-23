@@ -11,12 +11,17 @@ body {
     padding: 0;
     font-size: 14px;
     color: #0f1942;
+    /*background: linear-gradient(to top, #fbdee7, #fff);*/
 }
 
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
   display: block;
+}
+
+.wrapper.top {
+    position: relative;
 }
 
 p {
@@ -136,8 +141,9 @@ h2.typing-heading {
     position: absolute;
     font-size: 5.71rem;
     z-index: 10;
-    margin-top: 330px;
+    bottom: 0;
 }
+
 
 .typing {
     display: inline-block;
@@ -242,27 +248,43 @@ section.tutorial img{
 }
 
 
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1160px) {
   nav ul {
     padding: 10px 0;
   }
 
   h2.typing-heading {
     font-size: 4.5rem;
-    margin-top: 450px;
+    bottom: -50px;
   }
 }
 
 
-@media all and (max-width: 500px) {
-  nav ul {
-    padding: 10px 0;
-  }
-
+@media all and (max-width: 870px) {
   a.btn {
     display: block;
     padding: 10px;
     text-align: center;
+  }
+}
+
+@media all and (max-width: 830px) {
+  h2.typing-heading {
+    bottom: -150px;
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 764px) {
+  h2.typing-heading {
+      bottom: -280px;
+      font-size: 3rem;
+  }
+}
+
+@media all and (max-width: 500px) {
+  nav ul {
+    padding: 10px 0;
   }
 
   .larger-padding {
