@@ -34,7 +34,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'artegra_sansblack', sans-serif;
+    font-family: 'artegra_sansblack',  'Source Code Pro', sans-serif;
     line-height: 150%;
 }
 
@@ -149,7 +149,7 @@ h2.typing-heading {
     display: inline-block;
     margin-right: 20px;
     font-weight: bold;
-    font-family: 'artegra_sansblack', sans-serif;
+    font-family: 'artegra_sansblack',  'Source Code Pro', sans-serif;
 }
 
 .typed-cursor {
