@@ -204,7 +204,7 @@ a.btn:hover {
   color: var(--navy);
 }
 
-main {
+.main {
   background: linear-gradient(rgba(255, 255, 255, 0), var(--pink-bg));
   padding: 120px 0 0 0;
   position: relative;
@@ -221,7 +221,7 @@ main {
   height: 150px;
   background: transparent;
   border-radius: 50%;
-  z-index: 100;
+  z-index: 110;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -506,6 +506,8 @@ ul.conferenes--list li:hover {
 
 .testimonials, .sponsors, .gadgets, .contact, .quote, footer {
   background: #fff;
+  position: relative;
+  z-index: 100;
 }
 
 img.gadgets--img-fourth {
