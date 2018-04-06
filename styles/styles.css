@@ -722,6 +722,7 @@ footer {
   }
 }
 
+
 .no-fixed {
   position: relative;
   z-index: 100;
@@ -906,7 +907,7 @@ section.scroll-section {
   .menu--social-media-icons img {
     margin-right: 10px;
   }
-  
+
   .testimonials {
     width: 100%;
   }
