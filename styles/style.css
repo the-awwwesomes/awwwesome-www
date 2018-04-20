@@ -9,7 +9,7 @@
 body {
   min-height: 100vh;
   font-size: 16px;
-  font-family: 'Spectral';
+  font-family: 'Spectral', serif;
   margin: 0;
   color: var(--navy);
   overflow-x: hidden;
