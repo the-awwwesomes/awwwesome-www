@@ -136,11 +136,12 @@ a .menu--logo {
 }
 
 .menu--logo.shrink-logo {
-  height: 30px;
+  width: 200px;
 }
 
 .menu--logo {
-  height: 45px;
+  width: 300px;
+  margin: 0 auto;
   transition: height .2s;
 }
 
