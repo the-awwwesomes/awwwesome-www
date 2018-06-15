@@ -129,18 +129,18 @@ nav ul {
   height: 35px;
 }
 
-a .menu--logo {
+a .menu--logoanim {
   height: 45px;
   margin: 20px 0 15px 0;
   transition: height .2s;
 }
 
 
-.menu--logo.shrink-logo {
+.menu--logoanim.shrink-logo {
   width: 200px;
 }
 
-.menu--logo {
+.menu--logoanim {
   width: 300px;
   margin: 0 auto;
   transition: height .2s;
