@@ -135,6 +135,7 @@ a .menu--logo {
   transition: height .2s;
 }
 
+
 .menu--logo.shrink-logo {
   width: 200px;
 }
