@@ -504,8 +504,13 @@ ul.conferenes--list li:hover {
   max-width: 90%;
 }
 
-.testimonials, .sponsors, .gadgets, .contact, .quote, footer {
+.sponsors, .gadgets, .contact, .quote, footer {
   background: #fff;
+  position: relative;
+  z-index: 100;
+}
+
+.testimonials {
   position: relative;
   z-index: 100;
 }
