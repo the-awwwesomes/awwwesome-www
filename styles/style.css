@@ -141,6 +141,9 @@ a .menu--logoanim {
   transition: height .2s;
 }
 
+img.lazy.menu--logo {
+  height: 25px;
+}
 img.lazy.menu--logo.shrink-logo {
     height: 15px;
 }
