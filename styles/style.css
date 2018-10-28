@@ -54,7 +54,7 @@ h2 {
   font-size: 2rem;
 }
 
-.small {
+.small, span.small {
     font-size: 0.8rem;
     margin-top: 0;
     margin-bottom: 10px;
