@@ -54,6 +54,12 @@ h2 {
   font-size: 2rem;
 }
 
+p.small {
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
 nav {
   display: flex;
   width: 100%;
@@ -135,6 +141,9 @@ a .menu--logoanim {
   transition: height .2s;
 }
 
+img.lazy.menu--logo.shrink-logo {
+    height: 15px;
+}
 
 .menu--logoanim.shrink-logo {
   width: 200px;
@@ -164,10 +173,40 @@ a .menu--logoanim {
   border-bottom: 3px solid;
 }
 
-.news img {
-  width: 120%;
-  top: 50px;
+.row.news {
+    margin-top: 50px;
 }
+
+.news img {
+    height: 450px;
+    top: 50px;
+    position: relative;
+    right: 100px;
+}
+
+section.subscribe-form {
+  position: relative;
+
+}
+section.subscribe-form::after {
+    position: absolute;
+    content: "";
+    background: url(../images/splash.svg);
+    background-repeat: no-repeat;
+    z-index: 0;
+    width: 500px;
+    height: 500px;
+    left: -50px;
+    top: -100px;
+    transform: rotate(15deg);
+}
+
+form.subscribe, section.subscribe-form h3 {
+  z-index: 3;
+  position: relative;
+}
+
+
 
 .about img {
   width: 100%;
@@ -187,11 +226,23 @@ a .menu--logoanim {
   z-index: 100;
 }
 
+
 .about--text {
   padding-left: 90px;
 }
 
-a.btn {
+input[type="email"]{
+    color: var(--navy);
+    border-color: var(--navy);
+    padding: 0 5px;
+    width: 245px;
+    display: block;
+    height: 35px;
+    font-family: 'Spectral', serif;
+    font-size: 1rem;
+}
+
+a.btn, .subscribe-button {
   border: 2px solid;
   padding: 5px 10px;
   font-family: 'artegra_sansblack', 'Source Code Pro', sans-serif;
@@ -199,9 +250,11 @@ a.btn {
   display: inline-block;
   transition: background .3s ease-in-out;
   cursor: pointer;
+  font-size: 1rem;
+  color: var(--navy);
 }
 
-a.btn:hover {
+a.btn:hover, .subscribe-button:hover {
   background: var(--pink);
   color: var(--navy);
 }
@@ -813,6 +866,12 @@ section.scroll-section {
   z-index: 100;
 }
 
+@media screen and (max-width: 1999px) {
+  .row.news {
+      margin-top: 100px;
+  }
+}
+
 @media screen and (max-width:1024px) {
   .scroll-section--content {
     margin-top: 260px;
@@ -833,10 +892,11 @@ section.scroll-section {
     margin-top: 70px;
   }
   .news img {
-    width: 100%;
-    position: static;
+    width: 150%;
     margin-bottom: 20px;
-  }
+    height: auto;
+    left: -100px;
+}
   .about img.meetup, .about img.meetup {
     position: static;
   }
