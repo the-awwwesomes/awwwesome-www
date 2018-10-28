@@ -965,6 +965,10 @@ section.scroll-section {
 }
 
 @media screen and (max-width: 600px) {
+  .row.news {
+    margin-top: 230px;
+  }
+
   .menu--social-media-icons {
     position: static;
     margin-top: 15px;
