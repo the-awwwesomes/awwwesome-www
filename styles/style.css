@@ -54,7 +54,7 @@ h2 {
   font-size: 2rem;
 }
 
-p.small {
+.small {
     font-size: 0.8rem;
     margin-top: 0;
     margin-bottom: 10px;
@@ -209,7 +209,7 @@ section.subscribe-form::after {
 }
 
 form.subscribe, section.subscribe-form h3 {
-  z-index: 3;
+  z-index: 100;
   position: relative;
 }
 
