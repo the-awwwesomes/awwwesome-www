@@ -177,6 +177,10 @@ img.lazy.menu--logo.shrink-logo {
     margin-top: 50px;
 }
 
+.row.about {
+    margin-top: 150px;
+}
+
 .news img {
     height: 450px;
     top: 50px;
