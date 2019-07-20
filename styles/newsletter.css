@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Spectral', serif;
   padding-bottom: 100px;
 }
@@ -51,15 +51,15 @@ label {
 
 .subscribe {
   border: 2px solid;
-  padding: 5px 20px;
+  padding: 8px 20px;
   margin: 5px 0 20px 0;
   display: inline-block;
   cursor: pointer;
   font-size: 1rem;
   transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
   font-family: "Space Mono", monospace;
-
 }
+
 
 span.small {
     font-size: 0.8rem;
@@ -73,7 +73,7 @@ span.small {
 
 p {
   display: inline;
-  line-height: 140%;
+  line-height: 160%;
 }
 
 .bottom {
@@ -125,4 +125,10 @@ fieldset {
   .email {
     width: 100%;
   }
+
+  input[type="email"] .subscribe {
+    width: 100%;
+  }
 }
+
+
