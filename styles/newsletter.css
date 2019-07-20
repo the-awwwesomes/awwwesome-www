@@ -1,0 +1,129 @@
+body {
+  background: #f7b1ce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 16px;
+  font-family: 'Spectral', serif;
+  padding-bottom: 100px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  font-family: "Space Mono", monospace;
+}
+
+h3 {
+    font-family: "Space Mono", monospace;
+}
+
+a {
+  color: #000;
+}
+
+section.subscribe-form {
+    margin: 50px;
+}
+
+.email {
+  width: 100%;
+  max-width: 380px;
+  padding: 8px 10px;
+  border: 2px solid #000;
+}
+
+input {
+    font-family: "Space Mono", monospace;
+    font-size: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.newsletter {
+  max-width: 600px;
+  min-width: 400px;
+}
+
+.subscribe {
+  border: 2px solid;
+  padding: 5px 20px;
+  margin: 5px 0 20px 0;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+  font-family: "Space Mono", monospace;
+
+}
+
+span.small {
+    font-size: 0.8rem;
+}
+
+.subscribe:hover {
+  border-color: #000;
+  background: black;
+  color: #fff;
+}
+
+p {
+  margin-top: 30px;
+  display: inline;
+  line-height: 140%;
+}
+
+.bottom {
+    margin-top: 50px;
+}
+
+.eye {
+  height: 100px;
+  display: block;
+  margin: 50px auto;
+}
+@keyframes moveEye {
+  30% {
+    transform: translateX(-15px);
+  }
+  50% {
+    transform: translateY(6px) translateX(6px);
+  }
+  100% {
+    transform: translateY(-9px) translateX(-12px) scale(1.2);
+  }
+}
+
+g#XMLID_12_ {
+  animation: moveEye 5s infinite;
+  animation-direction: alternate;
+}
+
+input {
+  transition: all 1s ease-in-out;
+}
+
+fieldset {
+  border: 0;
+  margin-top: 20px;
+  margin-left: -15px;
+}
+
+@media all and (max-width: 500px) {
+  .newsletter {
+    width: 90%;
+    min-width: auto;
+  }
+
+  h1 {
+    max-width: 300px;
+  }
+
+  .email {
+    width: 100%;
+  }
+}
