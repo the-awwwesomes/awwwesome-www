@@ -218,7 +218,6 @@ form.subscribe, section.subscribe-form h3 {
 .about img {
   width: 100%;
   position: relative;
-  top: -100px;
 }
 
 .about img.meetup {
@@ -875,7 +874,7 @@ section.scroll-section {
 
 @media screen and (max-width: 1999px) {
   .row.news {
-      margin-top: 100px;
+      margin-top: 120px;
   }
 }
 
@@ -966,7 +965,7 @@ section.scroll-section {
 
 @media screen and (max-width: 600px) {
   .row.news {
-    margin-top: 230px;
+    margin-top: 300px;
   }
 
   .menu--social-media-icons {
