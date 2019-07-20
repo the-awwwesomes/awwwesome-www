@@ -129,6 +129,10 @@ fieldset {
   .email {
     width: 100%;
   }
+
+  section.subscribe-form {
+    margin: 50px 0;
+  }
 }
 
 
