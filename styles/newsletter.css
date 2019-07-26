@@ -23,6 +23,12 @@ a {
   color: #000;
 }
 
+a.home {
+	display: block;
+	font-size: 14px;
+  margin-bottom: 30px;
+}
+
 section.subscribe-form {
     margin: 50px;
 }
@@ -134,5 +140,3 @@ fieldset {
     margin: 50px 0;
   }
 }
-
-
