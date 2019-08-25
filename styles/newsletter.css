@@ -122,6 +122,11 @@ fieldset {
   margin-left: -15px;
 }
 
+.bottom {
+  margin-top: 50px;
+  display: inline-block;
+}
+
 @media all and (max-width: 500px) {
   .newsletter {
     width: 90%;
