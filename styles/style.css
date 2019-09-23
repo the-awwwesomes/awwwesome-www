@@ -248,7 +248,7 @@ form.subscribe, section.subscribe-form h3 {
   left: 50px;
 }
 
-.news p, .news h2, .about--text {
+.news p, .news h2, .about--text, .news h3{
   position: relative;
   z-index: 100;
 }
