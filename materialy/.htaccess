@@ -1,4 +1,3 @@
-    <Files *.pdf>
-        ForceType application/octet-stream
-        Header set Content-Disposition attachment
-    </Files>
+<IfModule mod_mime.c>
+AddType application/octet-stream .pdf
+</IfModule>
