@@ -2,9 +2,7 @@ RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-<Location "/materialy/">
-    <Files *.pdf>
-        ForceType application/octet-stream
-        Header set Content-Disposition attachment
-    </Files>
-</Location>
+<FilesMatch "\.pdf$">
+ForceType application/octet-stream
+Header set Content-Disposition attachment
+</FilesMatch>
