@@ -6,3 +6,5 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ForceType application/octet-stream
 Header set Content-Disposition attachment
 </FilesMatch>
+
+AddType application/octet-stream .pdf
