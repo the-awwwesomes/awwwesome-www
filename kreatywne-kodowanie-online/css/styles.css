@@ -397,3 +397,7 @@ circle.pb-eye1, circle.pb-eye2 {
     display: none;
   }
 }
+
+p a {
+  color: #ff5c41;
+}
