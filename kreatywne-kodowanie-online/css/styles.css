@@ -108,6 +108,9 @@ ul li {
   margin: 10px 0;
 }
 
+a {
+    color: #ff5c41;
+}
 p {
   line-height: 160%;
 }
