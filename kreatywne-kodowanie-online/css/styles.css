@@ -19,8 +19,6 @@ h3 {
 }
 
 img {
-  /* this is limiting the widht of the image,
-  so it takes 100% width of the parent maximum */
   max-width: 100%;
 }
 
@@ -35,8 +33,6 @@ nav {
 nav ul li {
   display: inline-block;
   margin: 0 15px;
-  /*0 refers to top and bottom
-  15px to left and right*/
   padding: 0;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -301,8 +297,7 @@ footer p {
   max-width: 600px;
 }
 
-/*oczy różowej*/
-
+=
 circle.pb-eye1, circle.pb-eye2 {
   animation-name: eyes;
   animation-duration: 1s;
@@ -311,12 +306,10 @@ circle.pb-eye1, circle.pb-eye2 {
 }
 
 .yellow-ball {
-  /*a tutaj przypisujemy wybraną animację do tej klasy*/
   animation-name: jump;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  /*środek ciężkości w środku*/
   transform-origin: center;
   transform-box: fill-box;
 }
@@ -338,8 +331,6 @@ circle.pb-eye1, circle.pb-eye2 {
   transform-origin: center;
   transform-box: fill-box;
 }
-
-/*tutaj TYLKO definiujemy animację, ale jeszcze ona nigdzie nie jest przypisana*/
 
 @keyframes eyes {
   100% {
