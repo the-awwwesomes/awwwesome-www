@@ -1,6 +1,7 @@
 body {
   font-family: 'Radley', serif;
   font-size: 19px;
+  overflow-x: hidden;
 }
 
 body, ul {
@@ -226,7 +227,7 @@ section.testimonial {
 .testimonial p {
   margin: 40px auto 0 auto;
   max-width: 30ch;
-  line-height: 120%;
+  line-height: 135%;
 }
 
 footer {
@@ -384,5 +385,24 @@ circle.pb-eye1, circle.pb-eye2 {
   }
   .details {
     padding: 0 50px;
+  }
+
+  .buy-ticket .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .table .item, .table .item.bottom {
+    border: 0;
+    border-bottom: 1px solid;
+  }
+
+  .table {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+  svg.eye2, li.empty {
+    display: none;
   }
 }
