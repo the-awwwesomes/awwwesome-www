@@ -1,0 +1,399 @@
+body {
+  font-family: 'Radley', serif;
+  font-size: 19px;
+}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, .skills-list {
+  font-family: 'Space Mono', monospace;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 20px;
+
+}
+img {
+  /* this is limiting the widht of the image,
+  so it takes 100% width of the parent maximum */
+  max-width: 100%;
+}
+
+nav {
+    background-color: #ff5c41;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px; /*0 refers to top and bottom
+  15px to left and right*/
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+li.empty {
+    width: 90px;
+    border-top: 1px solid black;
+    top: -5px;
+    position: relative;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+
+header {
+  top: 70px;
+  position: relative;
+  margin-bottom: 60px;
+  background-color: #ff5d41;
+  padding-bottom: 70px;
+}
+
+header h3 {
+  font-size: 22px;
+  line-height: 150%;
+  max-width: 34ch;
+}
+
+p.sub {
+  font-size: 14px;
+  font-family: 'Space Mono', monospace;
+  max-width: 36ch;
+  text-align: center;
+  margin-top: 50px;
+  line-height: 140%;
+
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 120%;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 130%;
+  color: #ff5c41;
+  margin-top: 60px;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+p {
+  line-height: 160%;
+}
+
+span.line {
+  width: 30px;
+  background: #000;
+  height: 1px;
+  display: inline-block;
+  top: -3px;
+  position: relative;
+  margin-right: 15px;
+}
+
+.buy-ticket {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -60px;
+}
+
+.buy-ticket .button {
+  font-size: 26px;
+  background: black;
+  color: #fff;
+  border-radius: 0;
+  font-family: 'Space Mono', monospace;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+  border: 2px solid black;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+
+.button:hover {
+  background: #fff;
+  color: black;
+}
+
+
+.skills-list {
+  text-align: center;
+  font-size: 22px;
+  line-height: 150%;
+  margin-bottom: 130px;
+}
+
+
+.details {
+  max-width: 60ch;
+  margin: 0 auto;
+}
+.details p {
+  max-width: 60ch;
+  margin: 15px auto;
+}
+
+.faq p {
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.faq h4 {
+  margin-bottom: 10px;
+  font-family: 'Space Mono', monospace;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; 
+}
+
+.table .item {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  padding: 30px;
+  text-align: center;
+}
+
+.table .item.right {
+  border-right: 0;
+}
+
+
+.table .item.bottom {
+  border-bottom: 0;
+}
+
+span.highlight {
+  font-family: 'Space Mono', monospace;
+  margin-bottom: 10px;
+  display: inline-block;
+  color: #ff5c41;
+}
+
+section.testimonial {
+  padding: 50px;
+  margin: 50px 0;
+  text-align: center;
+
+}
+
+.testimonial h3 {
+  margin: 0 auto;
+  font-style: italic;
+  font-size: 25px;
+  max-width: 44ch;
+  line-height: 150%;
+}
+
+.testimonial p {
+  margin: 40px auto 0 auto;
+  max-width: 30ch;
+  line-height: 120%;
+}
+
+
+footer {
+  text-align: center;
+  margin: 100px 100px 40px 100px;
+}
+
+footer p {
+  margin-top: 80px;
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.col-sm.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.svg-container {
+  margin: 20px 0;
+}
+
+.svg-container svg {
+	width: 200px;
+}
+
+.eye2 {
+	margin-left: 60px;
+}
+
+g#XMLID_12_ {
+    animation: moveEye 3s infinite;
+    animation-direction: alternate;
+}
+
+.top g#XMLID_12_  {
+ animation-delay: 2s;
+}
+
+.bottom g#XMLID_12_  {
+  animation-delay: 1s;
+ }
+
+
+
+@keyframes moveEye {
+  30% {
+    transform: translateX(-15px);
+  }
+  50% {
+    transform: translateY(6px) translateX(6px);
+  }
+  100% {
+    transform: translateY(-9px) translateX(-12px) scale(1.2);
+
+  }
+}
+
+
+@keyframes slowlyScale {
+		100% {
+				transform: scale(1.2);
+		}
+}
+
+
+.svg-container-bottom {
+  margin-top: 40px;
+}
+
+.svg-container-bottom svg {
+  width: 100%;
+  max-width: 600px;
+}
+
+/*oczy różowej*/
+circle.pb-eye1, circle.pb-eye2 {
+	animation-name: eyes;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.yellow-ball {
+	/*a tutaj przypisujemy wybraną animację do tej klasy*/
+	animation-name: jump;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	/*środek ciężkości w środku*/
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+.mouth {
+	animation-name: biggerMouth;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+.shadow-yb {
+	animation-name: smallerShadow;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+/*tutaj TYLKO definiujemy animację, ale jeszcze ona nigdzie nie jest przypisana*/
+@keyframes eyes {
+	100% {
+		transform: translate(15px,5px);
+	}
+}
+
+@keyframes jump {
+	100% {
+		transform: translateY(-50px) rotate(25deg) scale(1.1);
+	}
+}
+
+@keyframes smallerShadow {
+	100% {
+		transform: scale(0.7);
+	}
+}
+
+@keyframes biggerMouth {
+	100% {
+		transform: scale(1.2);
+	}
+}
+
+@media all and (max-width: 768px) {
+  .svg-container.top, .svg-container.bottom {
+    display: none;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  header h3 {
+    margin: 0 auto;
+  }
+
+  .eye2 {
+    margin-left: 20px;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 120%;
+    margin-top: 60px;
+}
+
+.details {
+  padding: 0 50px;
+}
+
+}
