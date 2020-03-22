@@ -105,7 +105,7 @@ ul li {
   margin: 10px 0;
 }
 
-a, .link {
+a, a.link {
     color: #ff5c41;
 }
 
